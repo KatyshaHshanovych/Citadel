@@ -1,0 +1,19 @@
+@import "fonts.css";
+body {
+  color: #393E46;
+  font-family: workSansRegular, serif;
+  width: 1920px;
+}
+
+.header__center {
+  background: #00ADB5;
+  width: 1496px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__navMenu {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

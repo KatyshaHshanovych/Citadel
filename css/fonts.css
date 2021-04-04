@@ -1,0 +1,23 @@
+@font-face {
+    font-family: workSansBlack;
+    src: url(/fonts/WorkSans-Black.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: workSansBold;
+    src: url(/fonts/WorkSans-Bold.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: workSansRegular;
+    src: url(/fonts/WorkSans-Regular.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: workSansSemiBold;
+    src: url(/fonts/WorkSans-SemiBold.ttf) format('truetype');
+    font-style: normal;
+}
