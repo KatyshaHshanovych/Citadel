@@ -5,6 +5,10 @@ body {
   width: 1920px;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+}
 .header__center {
   background: #00ADB5;
   width: 1496px;
@@ -14,6 +18,16 @@ body {
 }
 .header__navMenu {
   display: flex;
+}
+.header__navLink {
+  margin-right: 40px;
+}
+.header__navLink:nth-child(4) {
+  margin-right: 0;
+}
+.header__links {
+  font-size: 16px;
+  color: #F8FCFC;
 }
 
 /*# sourceMappingURL=style.css.map */

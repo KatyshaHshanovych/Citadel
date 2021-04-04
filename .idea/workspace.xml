@@ -2,50 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09705b79-22af-406d-b106-c0fe17160c3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Citadel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/WorkSans-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/WorkSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/WorkSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/WorkSans-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Arrow_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Logo_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/background_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/background_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/background_error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/balfourBeatty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/colorIcon/call_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/colorIcon/fax.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/colorIcon/message_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/colorIcon/spot_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/east_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/email_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/hochTief.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/call.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/spot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/tel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/networkRail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/peoples/girl_one.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/peoples/girl_three.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/peoples/girl_two.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/skanska.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/telephone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/telephone_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/west_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/WorkSans-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +58,25 @@
       <option name="presentableId" value="Default" />
       <updated>1617461059414</updated>
       <workItem from="1617461060455" duration="64000" />
-      <workItem from="1617552293092" duration="2318000" />
+      <workItem from="1617552293092" duration="3011000" />
     </task>
+    <task id="LOCAL-00001" summary="create a new repository">
+      <created>1617554920236</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617554920236</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="create a new repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a new repository" />
   </component>
 </project>

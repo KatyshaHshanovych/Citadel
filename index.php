@@ -20,23 +20,23 @@
                 </div>
                 <div class="header_navigation">
                     <ul class="header__navMenu">
-                        <li>
-                            <a href="#">
+                        <li class="header__navLink">
+                            <a href="#" class="header__links">
                                 Home
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="header__navLink">
+                            <a href="#" class="header__links">
                                 About Us
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="header__navLink">
+                            <a href="#" class="header__links">
                                 Our Service
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="header__navLink">
+                            <a href="#" class="header__links">
                                 Contacts
                             </a>
                         </li>
