@@ -6,8 +6,10 @@ body {
     width: 1920px;
 }
 
-@mixin background-color {
-    background: #00ADB5;
+
+.block-center {
+  width: 1496px;
+    margin: 0 auto;
 }
 
 .header {
@@ -20,6 +22,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 20px 0 22px 0;
     }
 
     &__navMenu {
@@ -28,6 +31,8 @@ body {
 
     &__navLink {
         margin-right: 40px;
+        border-bottom: 2px solid white;
+        padding-bottom: 8px;
 
         &:nth-child(4) {
             margin-right: 0;
@@ -37,5 +42,14 @@ body {
     &__links {
         font-size: 16px;
         color: #F8FCFC;
+        font-family: workSansMedium;
     }
+
+    &__iconTel {
+        margin-right: 24px;
+    }
+}
+
+.footer {
+    background: #393E46;
 }
