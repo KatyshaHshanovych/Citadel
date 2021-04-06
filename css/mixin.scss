@@ -1,3 +1,15 @@
 @mixin background-color {
     background: #00ADB5;
 }
+
+@mixin settings-footer-title {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: workSansBold;
+}
+
+@mixin settings-footer-blocks {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: workSansRegular;
+}

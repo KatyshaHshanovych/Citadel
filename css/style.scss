@@ -1,14 +1,19 @@
 @import "fonts.css";
+@import "mixin.scss";
+@import "font-awesome/font-awesome.min.css";
+
+* {
+    outline: none;
+}
 
 body {
-    color: #393E46;
-    font-family: workSansRegular, serif;
-    width: 1920px;
+   color: #393E46;
+   font-family: workSansRegular, serif;
 }
 
 
 .block-center {
-  width: 1496px;
+    width: 1496px;
     margin: 0 auto;
 }
 
@@ -16,13 +21,12 @@ body {
     display: flex;
     justify-content: center;
 
-    &__center {
-        background: #00ADB5;
-        width: 1496px;
+    &__small {
+        padding: 20px 0 22px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0 22px 0;
+        background: transparent;
     }
 
     &__navMenu {
@@ -52,4 +56,540 @@ body {
 
 .footer {
     background: #393E46;
+
+    &__titleOne {
+        @include settings-footer-title;
+        padding-bottom: 16px;
+    }
+
+    &__titleSecond {
+        @include settings-footer-title;
+        padding-bottom: 16px;
+        position: relative;
+        left: 40px;
+    }
+
+    &__titleThird {
+        @include settings-footer-title;
+        padding-bottom: 16px;
+        position: relative;
+        left: 40px;
+    }
+
+
+    &__links {
+        @include settings-footer-blocks;
+    }
+
+    &__first {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0 130px 0;
+        //border-bottom: 1.5px solid #FFFFFF;
+    }
+
+    &__copyright {
+        font-size: 18px;
+        color: #FFFFFF;
+        font-family: workSansBold;
+        text-align: center;
+        padding: 24px 0;
+    }
+
+    &__mainInfo {
+        display: flex;
+        padding-bottom: 14px;
+    }
+
+    &__contactIcon {
+        margin-right: 16px;
+    }
+
+
+    &__contactInfo {
+        @include settings-footer-blocks;
+        line-height: 155%;
+        position: relative;
+        top: -5px;
+
+    }
+
+    &__list {
+        padding-bottom: 16px;
+
+        &:nth-child(4){
+            padding-bottom: 0;
+        }
+    }
+
+    &__aboutCompany {
+        height: 185px;
+    }
+
+    &__regionalOffice {
+        height: 185px;
+    }
+
+    &__headOffice {
+        height: 185px;
+    }
+
+    &__border {
+        border: 1.5px solid #FFFFFF;
+        background: #FFFFFF;
+    }
+}
+
+
+.telephone {
+    position: relative;
+    top: -3px;
+}
+
+.faxIcon {
+    position: relative;
+    top: -2px;
+}
+
+.emailIcon {
+    position: relative;
+    top: 3px;
+}
+
+.siteImage {
+    position: relative;
+    top: -77px;
+}
+
+.block-aboutSite {
+    background-image: url("/img/background_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    &__title {
+        font-size: 90px;
+        font-family: workSansBlack;
+        color: #F8FCFC;
+    }
+
+    &__text {
+        font-size: 22px;
+        color: #F8FCFC;
+        font-family: workSansRegular;
+    }
+
+    &__left {
+        width: 609px;
+        margin-top: 160px;
+    }
+
+    &__link {
+        font-size: 14px;
+        color: #F8FCFC;
+        font-family: workSansSemiBold;
+        @include background-color;
+        margin-right: 24px;
+        padding: 20px 42px;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    &__text {
+        padding: 10px 0 32px 0;
+    }
+
+    &__buttons {
+        padding-top: 32px;
+    }
+}
+
+
+
+.block-sliders {
+    background: #E2F1F9;
+
+    &__texts {
+        font-size: 22px;
+        color: #393E46;
+        font-family: workSansMedium;
+    }
+
+    &__thirty {
+        font-size: 52px;
+        font-family: workSansBold;
+    }
+
+    &__quantity {
+        padding: 68px 0;
+    }
+
+    &__logoCompanies {
+        overflow: hidden;
+        margin-left: 50px;
+        width: 1100px;
+        margin-right: 95px;
+    }
+
+    &__img {
+        margin-right: 4px !important;
+        width: 260px !important;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+
+.slick-arrow {
+    position: absolute;
+    font-size: 40px;
+    background: transparent;
+    color: #393E46;
+    opacity: 0.4;
+    right: 216px;
+    margin-top: -30px;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    &__images {
+        display: flex;
+    }
+}
+
+.buildingLicenses {
+    padding-bottom: 112px;
+    background: #F8FCFC;
+
+    &__left {
+        width: 609px;
+    }
+
+    &__title {
+        font-size: 90px;
+        color: #393E46;
+        font-family: workSansBlack;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 135%;
+        color: #393E46;
+        padding-top: 32px;
+        font-family: workSansRegular;
+    }
+
+    &__link {
+        font-size: 14px;
+        color: #F8FCFC;
+        padding: 20px 42px;
+        letter-spacing: 0.03em;
+        font-family: workSansSemiBold;
+        @include background-color;
+        text-transform: uppercase;
+    }
+
+    &__grids {
+        width: 737px;
+        display: grid;
+        grid-template-columns: repeat(2, 356px);
+        margin-bottom: 40px;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding-top: 240px
+    }
+
+    &__titleGrid {
+        font-size: 24px;
+        color: #393E46;
+        font-family: workSansSemiBold;
+    }
+
+    &__info {
+        background: #E2F1F9;
+        padding: 56px 32px;
+        border-top: 4px solid #00ADB5;
+
+        &:hover {
+            @include background-color;
+            color: #F8FCFC;
+
+            .buildingLicenses__titleGrid {
+                color: #F8FCFC;
+            }
+
+            .buildingLicenses__article {
+                color: #F8FCFC;
+            }
+
+            .buildingLicenses__linkReadMore {
+                color: #F8FCFC;
+            }
+        }
+    }
+
+    &__article {
+        font-size: 16px;
+        color: #393E46;
+        font-family: workSansRegular;
+        padding: 24px 0;
+        line-height: 135%;
+
+        &:hover {
+            color: #F8FCFC;
+        }
+    }
+
+    &__linkReadMore {
+        font-size: 14px;
+        font-family: workSansSemiBold;
+        color: #00ADB5;
+
+        &:hover {
+            @include background-color;
+            color: #F8FCFC;
+        }
+    }
+
+    &__allBlocks {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        padding-top: 112px;
+    }
+
+    &__button {
+        position: relative;
+        bottom: 103px;
+    }
+}
+
+.blockContactUs {
+    background-image: url("/img/background_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    &__backgroundSecond {
+        background-image: url("/img/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 120px 0;
+    }
+
+    &__titleContactUs {
+        text-align: center;
+        font-size: 90px;
+        font-family: workSansBlack;
+        color: #FFFFFF;
+    }
+}
+
+.blockContactUs-form {
+    width: 483px;
+}
+
+.block-form-contacts {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+    &__titleHeadOffice {
+        font-size: 22px;
+        color: #FFFFFF;
+        font-family: workSansBold;
+    }
+
+    &__generalInformation {
+        font-size: 18px;
+        color: #FFFFFF;
+        font-family: workSansRegular;
+        line-height: 155%;
+    }
+
+    &__titleRegionalOffice {
+        font-size: 22px;
+        color: #FFFFFF;
+        font-family: workSansBold;
+    }
+
+    &__button {
+        font-size: 18px;
+        text-align: center;
+        font-family: workSansSemiBold;
+        color: #FFFFFF;
+        padding: 20px 80px;
+        @include background-color;
+        margin-top: 40px;
+    }
+
+    &__groupInput {
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+            .block-form-contacts__labelForm {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__inputForm {
+        height: 56px;
+        border: 1.5px solid #FFFFFF;
+        background-color: transparent;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: workSansMedium;
+        padding: 15px 0px 20px 15px;
+    }
+
+    &__labelForm {
+        font-size: 22px;
+        font-family: workSansBold;
+        color: #FFFFFF;
+        margin: 24px 0 15px 0;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #FFFFFF;
+    }
+
+    &__infoForm {
+        display: flex;
+        padding-bottom: 16px;
+    }
+
+    &__icon {
+        margin-right: 16px;
+    }
+
+    &__titleForm {
+        padding-bottom: 16px;
+        position: relative;
+        left: 46px;
+        font-size: 22px;
+        font-family: workSansBold;
+        color: #FFFFFF;
+    }
+
+    &__regionalOffice {
+        margin-top: 40px;
+    }
+
+    &__contactsOne {
+        margin-right: 277px;
+    }
+}
+
+.geolocation {
+    position: relative;
+    top: 12px;
+}
+
+.aboutUs-block {
+    background: #FFFFFF;
+
+    &__head {
+        background: #E2F1F9;
+        text-align: center;
+        padding: 38px 0;
+    }
+
+    &__linkAboutUs {
+        font-size: 60px;
+        color: #00ADB5;
+        font-family: workSansBlack;
+        background: #E2F1F9;
+    }
+
+    &__infoText {
+        display: flex;
+        width: 1244px;
+        margin: 0 auto;
+        padding: 120px 0 120px 0;
+    }
+
+    &__explanationOne {
+        font-size: 18px;
+        line-height: 155%;
+        color: #393E46;
+        font-family: workSansRegular;
+        margin-right: 24px;
+    }
+
+    &__explanationSecond {
+        font-size: 18px;
+        line-height: 155%;
+        color: #393E46;
+        font-family: workSansRegular;
+    }
+}
+
+.ourServices-block {
+
+    &__head {
+        text-align: center;
+        background: #393E46;
+        padding: 38px 0;
+    }
+
+    &__linkBlack {
+        font-size: 60px;
+        color: #FFFFFF;
+        font-family: workSansBlack;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 356px);
+        margin-bottom: 40px;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        grid-template-rows: repeat(2, 1fr);
+        padding: 120px 0;
+    }
+
+    &__titleGrid {
+        font-size: 24px;
+        color: #393E46;
+        font-family: workSansSemiBold;
+    }
+
+    &__news {
+        font-size: 16px;
+        color: #393E46;
+        line-height: 135%;
+        padding: 24px 0;
+        font-family: workSansRegular;
+    }
+
+    &__linkReadMore {
+        font-size: 14px;
+        color: #00ADB5;
+        font-family: workSansSemiBold;
+    }
+
+    &__informGrid {
+        padding: 56px 32px;
+        border-top: 4px solid #00ADB5;
+        background: #E2F1F9;
+    }
 }
