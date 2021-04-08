@@ -113,4 +113,11 @@
       margin: 0 auto;
     }
   }
+  .aboutUs-block__infoPeople.slick-current {
+    .aboutUs-block {
+      &__generalInfo {
+        display: none !important;
+      }
+    }
+  }
 }

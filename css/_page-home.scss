@@ -39,11 +39,6 @@
       color: #FFFFFF;
     }
 
-    &__inputForm {
-      background-color: transparent;
-      color: #FFFFFF;
-    }
-
     &__labelForm {
       color: #FFFFFF;
     }
@@ -60,6 +55,12 @@
       border: 1.5px solid #BDBDBD;
       color: white;
       font-family: workSansMedium;
+      background-color: transparent;
+      color: #FFFFFF;
+
+      &:focus {
+        color: #FFFFFF;
+      }
     }
 
     &__selectPhone {

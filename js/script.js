@@ -3,8 +3,8 @@ $(document).ready(function () {
     let logoCompaniesCountSlide = 4;
     let aboutUsBlockCountSlide = 3;
 
-    // Если екран меньше 800 пикселей выводим по 1 изображению
-    if (window_width <= 800)
+    // Если екран меньше 1510 пикселей выводим по 1 изображению
+    if (window_width <= 1510)
     {
         logoCompaniesCountSlide = 1;
         aboutUsBlockCountSlide = 1;

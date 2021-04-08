@@ -7,10 +7,6 @@
       align-items: center;
     }
 
-    &__blockIconContact {
-      display: none;
-    }
-
     &__burger {
       display: block;
     }
@@ -30,10 +26,8 @@
     background-position: right;
 
     &__left {
-      margin: 0 0 0 -30px;
-      width: 300px;
-      padding-bottom: 35px;
-      margin-left: 16px;
+      margin: 0 auto;
+      padding: 30px 0;
     }
 
     &__title {
@@ -54,43 +48,6 @@
       margin-right: 10px;
       padding: 12px 10px;
       font-size: 12px;
-    }
-  }
-
-  .block-sliders {
-    width: 100%;
-
-    &__quantity {
-      padding: 10px 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &__texts {
-      font-size: 20px;
-    }
-
-    &__thirty {
-      font-size: 20px;
-      font-family: workSansMedium;
-    }
-
-    &__images {
-      display: block;
-      margin: 0;
-      padding: 35px 0;
-    }
-
-    &__logoCompanies {
-      margin-left: 0;
-      width: 228px;
-      overflow: hidden;
-      margin: 0 auto;
-    }
-
-    &__img {
-      width: 300px !important;
     }
   }
 
@@ -206,5 +163,25 @@
 
   .siteImage {
     top: -57px;
+  }
+
+  .aboutUs-block {
+    &__infoPeople {
+      &.slick-current {
+        width: 90% !important;
+      }
+
+      &.slick-slide {
+        width: 264px !important;
+      }
+    }
+
+    &__image {
+      width: auto;
+    }
+
+    &__specialtyOne {
+      display: block;
+    }
   }
 }

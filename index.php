@@ -23,10 +23,10 @@
                         We are a proactive and collaborative company who readily adapt to our customers needs.
                     </div>
                     <div class="block-aboutSite__buttons">
-                        <a href="#" class="block-aboutSite__link">
+                        <a href="/ourServices.php" class="block-aboutSite__link">
                             OUR SERVICES
                         </a>
-                        <a href="#" class="block-aboutSite__link">
+                        <a href="/contacts.php" class="block-aboutSite__link">
                             CONTACT US
                         </a>
                     </div>

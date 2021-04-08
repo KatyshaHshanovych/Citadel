@@ -12,22 +12,22 @@
                 </div>
                 <ul>
                     <li class="footer__list">
-                        <a href="#" class="footer__links">
+                        <a href="/aboutUs.php" class="footer__links">
                             Who We Are
                         </a>
                     </li>
                     <li class="footer__list">
-                        <a href="#" class="footer__links">
+                        <a href="/" class="footer__links">
                             What We Do
                         </a>
                     </li>
                     <li class="footer__list">
-                        <a href="#" class="footer__links">
+                        <a href="/ourServices.php" class="footer__links">
                             Our Services
                         </a>
                     </li>
                     <li class="footer__list">
-                        <a href="#" class="footer__links">
+                        <a href="/contacts.php" class="footer__links">
                             Privacy Policy
                         </a>
                     </li>

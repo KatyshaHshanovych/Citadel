@@ -1,4 +1,21 @@
 @media screen and (max-width: 800px) {
+
+  .block-aboutSite {
+
+    &__title {
+      font-size: 80px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__left {
+      width: 400px;
+      margin: 98px 0 0 24px;
+    }
+  }
+
   .aboutUs-block {
     &__allSlide {
       width: 90%;
@@ -27,11 +44,59 @@
         }
       }
     }
+
+    &__infoText {
+      display: flex;
+      flex-direction: column;
+      padding: 60px 0;
+    }
+
+    &__explanationOne {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__specialist {
+      padding-top: 60px;
+    }
   }
 
   .block-sliders {
     &__img {
       width: 465px !important;
+    }
+  }
+
+  .page-home {
+
+    .header {
+      &__links {
+        &:hover {
+          color: #F8FCFC;
+        }
+      }
+    }
+  }
+  .header {
+    &__iconItem {
+      margin-right: 20px;
+    }
+  }
+
+  .ourServices-block {
+    &__grid {
+      width: 95%;
+      grid-template-columns: repeat(2, 48%);
+    }
+  }
+
+  .blockContactUs-form {
+    width: 100%;
+  }
+
+  .block-error {
+    &__title {
+      font-size: 50px;
     }
   }
 }

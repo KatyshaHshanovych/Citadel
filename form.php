@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="blockContactUs-form">
-            <form action="javascript:void(0)" class="contact-form__allInputs">
+            <form action="#" class="contact-form__allInputs">
                 <div class="block-form-contacts__groupInput">
                     <label for="Name" class="block-form-contacts__labelForm">
                         Name
@@ -96,9 +96,9 @@
                     <input class="block-form-contacts__inputForm" id="Email" type="email" placeholder="slash.battery@gmail.com">
                 </div>
                 <div class="block-form-contacts__button">
-                    <a href="#" class="block-form-contacts__buttonLink">
+                    <button class="block-form-contacts__buttonLink">
                         Contact Me
-                    </a>
+                    </button>
                 </div>
             </form>
         </div>

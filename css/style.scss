@@ -476,13 +476,14 @@ body {
 
     &__buttonLink {
         font-size: 18px;
-        display: block;
         text-align: center;
         font-family: workSansSemiBold;
         color: #FFFFFF;
         padding: 20px 0;
         background: #00ADB5;
         margin-top: 40px;
+        width: 100%;
+        cursor: pointer;
     }
 
     &__groupInput {
@@ -617,7 +618,7 @@ body {
         display: flex;
         width: 1244px;
         margin: 0 auto;
-        padding: 120px 0 120px 0;
+        padding: 120px 0;
     }
 
     &__explanationOne {
@@ -845,7 +846,6 @@ body {
         background: #E2F1F9;
 
         &:hover {
-            border-top: 0;
             @include background-color;
 
             .ourServices-block__titleGrid {
@@ -854,7 +854,6 @@ body {
 
             .ourServices-block__news {
                 color: #FFFFFF;
-                line-height: 125%;
             }
 
             .ourServices-block__linkReadMore {
@@ -954,5 +953,6 @@ body {
 @import "_media_800.scss";
 @import "_media_695.scss";
 @import "_media_320.scss";
+@import "_media_425.scss";
 
 

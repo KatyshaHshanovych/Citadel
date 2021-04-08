@@ -32,10 +32,6 @@
 .page-home .block-form-contacts__button {
   color: #FFFFFF;
 }
-.page-home .block-form-contacts__inputForm {
-  background-color: transparent;
-  color: #FFFFFF;
-}
 .page-home .block-form-contacts__labelForm {
   color: #FFFFFF;
 }
@@ -49,6 +45,11 @@
   border: 1.5px solid #BDBDBD;
   color: white;
   font-family: workSansMedium;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__inputForm:focus {
+  color: #FFFFFF;
 }
 .page-home .block-form-contacts__selectPhone {
   background: transparent;
@@ -465,13 +466,14 @@ body {
 }
 .block-form-contacts__buttonLink {
   font-size: 18px;
-  display: block;
   text-align: center;
   font-family: workSansSemiBold;
   color: #FFFFFF;
   padding: 20px 0;
   background: #00ADB5;
   margin-top: 40px;
+  width: 100%;
+  cursor: pointer;
 }
 .block-form-contacts__groupInput {
   display: flex;
@@ -583,7 +585,7 @@ body {
   display: flex;
   width: 1244px;
   margin: 0 auto;
-  padding: 120px 0 120px 0;
+  padding: 120px 0;
 }
 .aboutUs-block__explanationOne {
   font-size: 18px;
@@ -774,7 +776,6 @@ body {
   background: #E2F1F9;
 }
 .ourServices-block__informGrid:hover {
-  border-top: 0;
   background: #00ADB5;
 }
 .ourServices-block__informGrid:hover .ourServices-block__titleGrid {
@@ -782,7 +783,6 @@ body {
 }
 .ourServices-block__informGrid:hover .ourServices-block__news {
   color: #FFFFFF;
-  line-height: 125%;
 }
 .ourServices-block__informGrid:hover .ourServices-block__linkReadMore {
   color: #FFFFFF;
@@ -944,6 +944,10 @@ body {
   .block-error__notFoundLeft {
     margin: 0 auto;
   }
+
+  .aboutUs-block__infoPeople.slick-current .aboutUs-block__generalInfo {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 1024px) {
   .footer__first {
@@ -1039,6 +1043,17 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
+  .block-aboutSite__title {
+    font-size: 80px;
+  }
+  .block-aboutSite__text {
+    font-size: 18px;
+  }
+  .block-aboutSite__left {
+    width: 400px;
+    margin: 98px 0 0 24px;
+  }
+
   .aboutUs-block__allSlide {
     width: 90%;
   }
@@ -1057,9 +1072,42 @@ body {
   .aboutUs-block__infoPeople.slick-current .aboutUs-block__generalInfo {
     width: 395px;
   }
+  .aboutUs-block__infoText {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+  }
+  .aboutUs-block__explanationOne {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .aboutUs-block__specialist {
+    padding-top: 60px;
+  }
 
   .block-sliders__img {
     width: 465px !important;
+  }
+
+  .page-home .header__links:hover {
+    color: #F8FCFC;
+  }
+
+  .header__iconItem {
+    margin-right: 20px;
+  }
+
+  .ourServices-block__grid {
+    width: 95%;
+    grid-template-columns: repeat(2, 48%);
+  }
+
+  .blockContactUs-form {
+    width: 100%;
+  }
+
+  .block-error__title {
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 695px) {
@@ -1109,6 +1157,7 @@ body {
     margin-right: 0;
     border-bottom: 0;
     margin-bottom: 20px;
+    text-align: center;
   }
   .header__navMenu li a {
     font-size: 20px;
@@ -1121,6 +1170,9 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .header__iconItem:last-child {
+    margin-right: 0;
+  }
   .header__iconItem i {
     font-size: 35px;
   }
@@ -1131,15 +1183,90 @@ body {
   .page-home .header__hamburger {
     background: #00adb5;
   }
+
+  .buildingLicenses__title {
+    font-size: 50px;
+  }
+  .buildingLicenses__description {
+    font-size: 14px;
+  }
+  .buildingLicenses__left {
+    width: 500px;
+  }
+  .buildingLicenses__grids {
+    width: 302px;
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .aboutUs-block__explanationOne {
+    font-size: 14px;
+  }
+  .aboutUs-block__explanationSecond {
+    font-size: 14px;
+  }
+  .aboutUs-block__infoText {
+    padding: 50px 0 60px 0;
+  }
+  .aboutUs-block__specialist {
+    padding-top: 40px;
+    font-size: 40px;
+  }
+
+  .ourServices-block__grid {
+    width: 356px;
+    grid-template-columns: repeat(1, 356px);
+  }
+
+  .block-error__notFoundLeft {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .block-error__title {
+    font-size: 38px;
+  }
+  .block-error__descriptionError {
+    font-size: 20px;
+  }
+
+  .block-form-contacts__allBlocks {
+    display: block;
+    width: 270px;
+  }
+  .block-form-contacts__contactsOne {
+    margin-right: 0;
+  }
+  .block-form-contacts__generalInformation {
+    font-size: 16px;
+    text-align: center;
+  }
+  .block-form-contacts__infoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-form-contacts .geolocation {
+    top: 0;
+  }
+  .block-form-contacts__titleForm {
+    font-size: 25px;
+    text-align: center;
+    left: 0;
+    position: unset;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-prev {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 320px) {
   .header__navMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .header__blockIconContact {
-    display: none;
   }
   .header__burger {
     display: block;
@@ -1156,10 +1283,8 @@ body {
     background-position: right;
   }
   .block-aboutSite__left {
-    margin: 0 0 0 -30px;
-    width: 300px;
-    padding-bottom: 35px;
-    margin-left: 16px;
+    margin: 0 auto;
+    padding: 30px 0;
   }
   .block-aboutSite__title {
     font-size: 24px;
@@ -1176,37 +1301,6 @@ body {
     margin-right: 10px;
     padding: 12px 10px;
     font-size: 12px;
-  }
-
-  .block-sliders {
-    width: 100%;
-  }
-  .block-sliders__quantity {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .block-sliders__texts {
-    font-size: 20px;
-  }
-  .block-sliders__thirty {
-    font-size: 20px;
-    font-family: workSansMedium;
-  }
-  .block-sliders__images {
-    display: block;
-    margin: 0;
-    padding: 35px 0;
-  }
-  .block-sliders__logoCompanies {
-    margin-left: 0;
-    width: 228px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  .block-sliders__img {
-    width: 300px !important;
   }
 
   .slick-track {
@@ -1295,6 +1389,83 @@ body {
 
   .siteImage {
     top: -57px;
+  }
+
+  .aboutUs-block__infoPeople.slick-current {
+    width: 90% !important;
+  }
+  .aboutUs-block__infoPeople.slick-slide {
+    width: 264px !important;
+  }
+  .aboutUs-block__image {
+    width: auto;
+  }
+  .aboutUs-block__specialtyOne {
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  .buildingLicenses__title {
+    font-size: 30px;
+  }
+  .buildingLicenses__left {
+    width: 300px;
+  }
+  .buildingLicenses__description {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .blockContactUs__bigTitle {
+    font-size: 50px;
+  }
+
+  .block-error__notFoundLeft {
+    width: 78%;
+  }
+
+  .block-aboutSite__link {
+    padding: 10px 10px;
+  }
+  .block-aboutSite__left {
+    width: 80%;
+  }
+
+  .ourServices-block__grid {
+    width: 90%;
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .block-sliders {
+    width: 100%;
+  }
+  .block-sliders__img {
+    width: auto;
+  }
+  .block-sliders__quantity {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .block-sliders__texts {
+    font-size: 20px;
+  }
+  .block-sliders__thirty {
+    font-size: 20px;
+    font-family: workSansMedium;
+  }
+  .block-sliders__images {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 35px 0;
+  }
+  .block-sliders__logoCompanies {
+    margin-left: 0;
+    width: 228px;
+    overflow: hidden;
+    margin: 0 auto;
   }
 }
 
