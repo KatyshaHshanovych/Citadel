@@ -1,0 +1,58 @@
+@media screen and (max-width: 1500px) {
+  .header__small {
+    padding: 20px 24px 22px 24px;
+  }
+
+  .block-aboutSite__left {
+    margin: 160px 0px 0px 24px;
+  }
+
+  .block-sliders__images {
+    margin: 0 65px 0px 25px;
+  }
+
+  .buildingLicenses {
+    padding-bottom: 140px;
+  }
+  .buildingLicenses__left {
+    margin: 0 auto;
+    width: 650px;
+  }
+  .buildingLicenses__grids {
+    padding-top: 60px;
+    width: 650px;
+    grid-template-columns: repeat(2, 312px);
+    margin: 0 auto;
+  }
+  .buildingLicenses__title {
+    font-size: 66px;
+  }
+  .buildingLicenses__allBlocks {
+    display: block;
+    margin-bottom: 0;
+    padding-top: 60px;
+  }
+  .buildingLicenses__button {
+    position: relative;
+    top: 50px;
+    text-align: center;
+  }
+
+  .blockContactUs__backgroundSecond {
+    padding: 58px 0;
+  }
+
+  .block-form-contacts {
+    margin: 0;
+  }
+
+  .block-center {
+    width: 100%;
+  }
+
+  .footer__first {
+    justify-content: space-around;
+  }
+}
+
+/*# sourceMappingURL=media_1500.css.map */

@@ -1,15 +1,21 @@
 <div class="header">
     <div class="block-center">
+        <div class="header__hamburger block-mobile">
+            <div class="header__logoMobile">
+                <a href="/">
+                    <a href="/" class="header__logoLink"></a>
+                </a>
+            </div>
+            <img src="./img/icon_burger.png" class="burger" alt="burger" title="burger">
+        </div>
         <div class="header__small">
             <div class="header__logo">
-                <a href="/">
-                    <img src="./img/logo.png" alt="logo" title="logo">
-                </a>
+                <a href="/" class="header__logoLink"></a>
             </div>
             <div class="header__navigation">
                 <ul class="header__navMenu">
                     <li class="header__navLink">
-                        <a href="#" class="header__links">
+                        <a href="/" class="header__links headerAboutUs">
                             Home
                         </a>
                     </li>
@@ -24,18 +30,18 @@
                         </a>
                     </li>
                     <li class="header__navLink">
-                        <a href="#" class="header__links">
+                        <a href="contacts.php" class="header__links">
                             Contacts
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="header__iconContact">
-                <a href="#" class="header__iconTel">
-                    <img src="./img/email.png" alt="email" title="email">
+            <div class="header__blockIconContact">
+                <a href="#" class="header__iconItem">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
-                <a href="#">
-                    <img src="./img/telephone.png" alt="tel" title="tel">
+                <a href="#" class="header__iconItem">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
                 </a>
             </div>
         </div>

@@ -1,0 +1,118 @@
+@media screen and (max-width: 1024px) {
+  .footer {
+    &__first {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0 40px 0;
+    }
+
+    &__headOffice {
+      height: auto;
+      margin-top: 25px;
+    }
+
+    &__regionalOffice {
+      height: auto;
+      margin-top: 25px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__titleSecond {
+      text-align: center;
+      position: unset;
+      font-size: 25px;
+    }
+
+    &__titleThird {
+      text-align: center;
+      position: unset;
+    }
+
+    &__contactInfo {
+      font-size: 16px;
+    }
+
+    &__copyright {
+      font-size: 16px;
+    }
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    .siteImage {
+      position: initial;
+      top: 0;
+    }
+
+    &__contactIcon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    &__titleOne {
+      font-size: 25px;
+    }
+
+    &__mainInfo {
+      display: flex;
+      text-align: center;
+      padding-bottom: 14px;
+      flex-direction: column;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .block-form-contacts {
+    &__allBlocks {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+  }
+
+  .blockContactUs {
+    &__bigTitle {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    &__backgroundSecond {
+      padding-bottom: 0;
+    }
+  }
+
+  .ourServices-block {
+    &__titleFormBlockServices {
+      margin-bottom: 20px;
+      padding-top: 60px;
+    }
+  }
+  .aboutUs-block {
+    &__titleForForm {
+      margin-bottom: 30px;
+      padding-top: 60px;
+    }
+  }
+
+  .contacts {
+    &__backMap {
+      margin-bottom: 60px;
+    }
+  }
+
+  .block-error {
+    background-position: right;
+  }
+
+  .block-aboutSite {
+    background-position: right;
+  }
+}

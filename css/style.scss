@@ -1,6 +1,10 @@
 @import "fonts.css";
 @import "mixin.scss";
+@import "_page-home.scss";
 @import "font-awesome/font-awesome.min.css";
+
+$color-form: #393E46;
+$height-slide: 377px;
 
 * {
     outline: none;
@@ -20,6 +24,14 @@ body {
 .header {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+
+    &__burger {
+        display: none;
+    }
 
     &__small {
         padding: 20px 0 22px 0;
@@ -45,12 +57,27 @@ body {
 
     &__links {
         font-size: 16px;
-        color: #F8FCFC;
+        color: #393E46;
         font-family: workSansMedium;
+        &:hover {
+            color: #00ADB5;
+        }
     }
 
-    &__iconTel {
+    &__iconItem {
         margin-right: 24px;
+        color: black;
+        i {
+            font-size: 24px;
+        }
+    }
+
+
+    &__logoLink {
+        width: 152px;
+        height: 38px;
+        background-image: url(../img/logo_black.png);
+        display: block;
     }
 }
 
@@ -236,8 +263,18 @@ body {
     &__logoCompanies {
         overflow: hidden;
         margin-left: 50px;
-        width: 1100px;
+        width: 1050px;
         margin-right: 95px;
+
+        .slick-prev {
+            right: 180px;
+            bottom: -115px;
+        }
+
+        .slick-next {
+            right: 146px;
+            bottom: -180px;
+        }
     }
 
     &__img {
@@ -381,17 +418,25 @@ body {
 }
 
 .blockContactUs {
+
     background-image: url("/img/background_2.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+
+    &__bigTitle {
+        font-size: 90px;
+        color: #FFFFFF;
+        font-family: workSansBlack;
+        text-align: center;
+    }
 
     &__backgroundSecond {
         background-image: url("/img/background.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        padding: 120px 0;
+        padding: 120px 0 60px 0;
     }
 
     &__titleContactUs {
@@ -407,36 +452,36 @@ body {
 }
 
 .block-form-contacts {
-    margin-top: 60px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 
     &__titleHeadOffice {
         font-size: 22px;
-        color: #FFFFFF;
+        color: $color-form;
         font-family: workSansBold;
     }
 
     &__generalInformation {
         font-size: 18px;
-        color: #FFFFFF;
+        color: $color-form;
         font-family: workSansRegular;
         line-height: 155%;
     }
 
     &__titleRegionalOffice {
         font-size: 22px;
-        color: #FFFFFF;
+        color: $color-form;
         font-family: workSansBold;
     }
 
-    &__button {
+    &__buttonLink {
         font-size: 18px;
+        display: block;
         text-align: center;
         font-family: workSansSemiBold;
         color: #FFFFFF;
-        padding: 20px 80px;
-        @include background-color;
+        padding: 20px 0;
+        background: #00ADB5;
         margin-top: 40px;
     }
 
@@ -453,23 +498,48 @@ body {
 
     &__inputForm {
         height: 56px;
-        border: 1.5px solid #FFFFFF;
+        border: 1.5px solid #4E4E4E;
         background-color: transparent;
-        color: #FFFFFF;
+        color: #BDBDBD;
         font-size: 18px;
         font-family: workSansMedium;
         padding: 15px 0px 20px 15px;
+
+        &:focus {
+            color: #393E46;
+        }
+
+        &.inputPhone {
+            border: 0;
+            padding: 0;
+            margin-left: 10px;
+            width: 100%;
+        }
+    }
+
+    &__selectPhone {
+        background: transparent;
+        color: $color-form;
+        border: 0;
+        font-size: 21px;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    &__blockPhone {
+        border: 1.5px solid #4E4E4E;
+        display: flex;
     }
 
     &__labelForm {
         font-size: 22px;
         font-family: workSansBold;
-        color: #FFFFFF;
+        color: #393E46;
         margin: 24px 0 15px 0;
     }
 
     input::-webkit-input-placeholder {
-        color: #FFFFFF;
+        color: #BDBDBD;
     }
 
     &__infoForm {
@@ -487,7 +557,7 @@ body {
         left: 46px;
         font-size: 22px;
         font-family: workSansBold;
-        color: #FFFFFF;
+        color: $color-form;
     }
 
     &__regionalOffice {
@@ -496,6 +566,14 @@ body {
 
     &__contactsOne {
         margin-right: 277px;
+    }
+
+
+    &__allBlocks {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 120px;
     }
 }
 
@@ -506,6 +584,21 @@ body {
 
 .aboutUs-block {
     background: #FFFFFF;
+
+    &__titleForForm {
+        font-size: 60px;
+        color: #393E46;
+        text-align: center;
+        font-family: workSansBlack;
+        padding-top: 120px;
+    }
+
+    &__skillsAbilities {
+        padding-top: 24px;
+        font-size: 16px;
+        color: $color-form;
+        line-height: 155%;
+    }
 
     &__head {
         background: #E2F1F9;
@@ -541,9 +634,168 @@ body {
         color: #393E46;
         font-family: workSansRegular;
     }
+
+    &__slider {
+        background: #F8FCFC;
+    }
+
+    &__specialist {
+        color: #393E46;
+        font-size: 60px;
+        font-family: workSansBlack;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    &__specialty {
+        background: #393E46;
+        padding: 19px 0px 19px 30px;
+        bottom: 66px;
+        position: relative;
+    }
+
+    &__infoPeople {
+        margin-right: 24px;
+
+        // Slider
+        &.slick-active {
+            width: 293px !important;
+        }
+
+        &.slick-slide {
+            width: 475px;
+            height: $height-slide !important;
+        }
+
+        &.slick-current {
+            display: flex;
+            width: 35% !important;
+            height: $height-slide;
+            .aboutUs-block {
+                &__generalInfo {
+                    display: flex !important;
+                }
+                &__infoPeople {
+                    display: flex;
+                }
+                &__specialty {
+                    display: none;
+                }
+                &__image {
+                    width: 315px;
+                }
+                &__specialtyOne {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__name {
+        font-size: 22px;
+        color: #FFFFFF;
+        font-family: workSansBold;
+    }
+
+    &__informationSpeciality {
+        font-size: 16px;
+        color: #FFFFFF;
+        font-family: workSansMedium;
+        padding-top: 5px;
+    }
+
+    &__girlInfo {
+        padding: 26px 37px 40px 25px;
+    }
+
+    &__generalInfo {
+        display: none;
+        width: 550px;
+        background: #E2F1F9;
+        box-shadow: 0px 0px 4px rgba(90, 110, 121, 0.25);
+    }
+
+    &__nameSpecialist {
+        font-size: 22px;
+        color: $color-form;
+        font-family: workSansBold;
+    }
+
+    &__workSpecialist {
+        font-size: 16px;
+        color: $color-form;
+        font-family: workSansSemiBold;
+        padding: 10px 0 24px 0;
+    }
+
+    &__itemSpeciality {
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: workSansRegular;
+        background: $color-form;
+        width: 120px;
+        padding: 10px 20px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    &__kindOfSpecialty {
+        display: flex;
+    }
+
+    &__sliders {
+        display: flex;
+        justify-content: center;
+        padding: 60px 0 120px 0;
+    }
+
+    &__image {
+        width: 315px;
+    }
+
+    &__specialtyOne {
+        background: #393E46;
+        padding: 19px 0px 19px 30px;
+        bottom: 4px;
+        position: relative;
+    }
+
+    &__allSlide {
+        width: 100%;
+        overflow: hidden;
+
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-arrow {
+            color: #00ADB5;
+        }
+        .slick-next {
+            color: #00ADB5;
+            margin-top: 24px;
+            margin-right: 0px;
+        }
+        .slick-prev {
+            margin-top: 401px;
+            margin-right: 58px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
 }
 
 .ourServices-block {
+
+    &__titleFormBlockServices {
+        font-size: 60px;
+        color: #393E46;
+        font-family: workSansBlack;
+        text-align: center;
+        padding-top: 120px;
+    }
 
     &__head {
         text-align: center;
@@ -564,7 +816,7 @@ body {
         grid-column-gap: 24px;
         grid-row-gap: 24px;
         grid-template-rows: repeat(2, 1fr);
-        padding: 120px 0;
+        padding: 120px 0 60px 0;
     }
 
     &__titleGrid {
@@ -588,8 +840,119 @@ body {
     }
 
     &__informGrid {
-        padding: 56px 32px;
+        padding: 42px 32px;
         border-top: 4px solid #00ADB5;
         background: #E2F1F9;
+
+        &:hover {
+            border-top: 0;
+            @include background-color;
+
+            .ourServices-block__titleGrid {
+                color: #FFFFFF;
+            }
+
+            .ourServices-block__news {
+                color: #FFFFFF;
+                line-height: 125%;
+            }
+
+            .ourServices-block__linkReadMore {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__imgBlock {
+        position: absolute;
+        top: 347px;
+        display: none;
+    }
+
+    &__FormThisBlock {
+        background: #F8FCFC;
+        width: 100%;
     }
 }
+
+.block-error {
+    background-image: url("/img/background_error.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    &__returnHomeButton {
+        font-size: 18px;
+        color: #FFFFFF;
+        padding: 12px 32px;
+        @include background-color;
+        font-family: workSansSemiBold;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    &__notFoundLeft {
+        width: 729px;
+        padding: 226px 0;
+    }
+
+    &__title {
+        font-size: 60px;
+        color: #FFFFFF;
+        font-family: workSansBlack;
+    }
+
+    &__descriptionError {
+        font-size: 20px;
+        color: #FFFFFF;
+        padding: 16px 0 40px 0;
+        line-height: 155%;
+        font-family: workSansRegular;
+    }
+}
+
+.contacts {
+
+    &__bigTitle {
+        text-align: center;
+        padding: 36px 0;
+        @include background-color;
+    }
+
+    &__green {
+        font-size: 60px;
+        color: #FFFFFF;
+        font-family: workSansBlack;
+    }
+
+
+    &__location {
+        width: 100%;
+    }
+
+    .block-form-contacts__BigTitleForm {
+        display: none;
+    }
+}
+
+.slick-track {
+    display: flex;
+}
+
+.block-mobile {
+    display: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+@import "media_1500.scss";
+@import "_media_1024.scss";
+@import "_media_800.scss";
+@import "_media_695.scss";
+@import "_media_320.scss";
+
+

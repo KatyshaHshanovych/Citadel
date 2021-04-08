@@ -1,0 +1,37 @@
+@media screen and (max-width: 800px) {
+  .aboutUs-block {
+    &__allSlide {
+      width: 90%;
+    }
+
+    &__girlInfo {
+      width: 100%;
+    }
+
+    &__skillsAbilities {
+      font-size: 13px;
+    }
+
+
+    &__infoPeople {
+      &.slick-slide {
+        width: 900px !important;
+      }
+
+      &.slick-current {
+        width: 25% !important;
+        .aboutUs-block {
+          &__generalInfo {
+            width: 395px;
+          }
+        }
+      }
+    }
+  }
+
+  .block-sliders {
+    &__img {
+      width: 465px !important;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@media screen and (max-width: 1500px) {
+
+  .header {
+
+    &__small {
+      padding: 20px 24px 22px 24px;
+    }
+  }
+
+  .block-aboutSite {
+
+    &__left {
+      margin: 40px 0 0 24px;
+    }
+
+  }
+
+  .block-sliders {
+
+    &__images {
+      margin: 0 65px 0px 25px;
+    }
+
+    &__logoCompanies {
+      .slick-prev {
+        right: 95px;
+      }
+      .slick-next {
+        right: 60px;
+        bottom: -195px;
+      }
+    }
+  }
+
+  .buildingLicenses {
+    padding-bottom: 140px;
+    &__left {
+      margin: 0 auto;
+      width: 650px;
+    }
+
+    &__grids {
+      padding-top: 60px;
+      width: 650px;
+      grid-template-columns: repeat(2, 312px);
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 66px;
+    }
+
+    &__allBlocks {
+      display: block;
+      margin-bottom: 0;
+      padding-top: 60px;
+    }
+
+    &__button {
+      position: relative;
+      top: 50px;
+      text-align: center;
+    }
+  }
+
+  .blockContactUs {
+    &__backgroundSecond {
+      padding: 58px 0;
+    }
+  }
+
+  .block-form-contacts {
+    margin: 0;
+
+    &__contactsOne {
+      margin-right: 40px;
+    }
+  }
+
+  .block-center {
+    width: 100%;
+  }
+
+  .footer {
+    &__first {
+      justify-content: space-around;
+    }
+
+    &__titleThird {
+      left: 0;
+    }
+  }
+
+  .aboutUs-block {
+    &__infoText {
+      width: 90%;
+    }
+    &__generalInfo {
+      display: none !important;
+    }
+  }
+
+  .ourServices-block {
+    &__grid {
+      width: 737px;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 356px);
+    }
+  }
+
+  .block-error {
+    &__notFoundLeft {
+      margin: 0 auto;
+    }
+  }
+}

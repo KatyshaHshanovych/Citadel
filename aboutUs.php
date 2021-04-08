@@ -57,7 +57,234 @@
                     </p>
                 </div>
             </div>
-            <div class="aboutUs-block__sliders">
+            <div class="aboutUs-block__slider">
+                <div class="aboutUs-block__specialist">
+                    Our Best Specialists
+                </div>
+                <div class="block-center">
+                    <div class="aboutUs-block__sliders">
+                        <div class="aboutUs-block__allSlide">
+                            <div class="aboutUs-block__infoPeople">
+                                <img src="./img/peoples/girl_one.jpg" alt="girl" title="girl" class="aboutUs-block__image">
+                                <div class="aboutUs-block__specialtyOne">
+                                    <a href="#" class="aboutUs-block__name">
+                                        John Fairley
+                                    </a><br>
+                                    <a href="#" class="aboutUs-block__informationSpeciality">
+                                        Chief Engineer
+                                    </a>
+                                </div>
+                                <div class="aboutUs-block__generalInfo">
+                                    <div class="aboutUs-block__girlInfo">
+                                        <div class="aboutUs-block__girlName">
+                                            <p class="aboutUs-block__nameSpecialist">
+                                                John Fairley
+                                            </p>
+                                            <p class="aboutUs-block__workSpecialist">
+                                                Chief Engineer
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__kindOfSpecialty">
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Engineering
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Geodesy
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Interior
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__skillsAbilities">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sem semper consectetur in nibh arcu ridiculus urna.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                            Fermentum urna pellentesque rhoncus commodo, maecenas tortor nisi, ut imperdiet.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aboutUs-block__infoPeople">
+                                <img src="./img/peoples/girl_two.jpg" alt="girl" title="girl" class="aboutUs-block__image">
+                                <div class="aboutUs-block__specialtyOne">
+                                    <a href="#" class="aboutUs-block__name">
+                                        John Fairley
+                                    </a><br>
+                                    <a href="#" class="aboutUs-block__informationSpeciality">
+                                        Chief Engineer
+                                    </a>
+                                </div>
+                                <div class="aboutUs-block__generalInfo">
+                                    <div class="aboutUs-block__girlInfo">
+                                        <div class="aboutUs-block__girlName">
+                                            <p class="aboutUs-block__nameSpecialist">
+                                                John Fairley
+                                            </p>
+                                            <p class="aboutUs-block__workSpecialist">
+                                                Chief Engineer
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__kindOfSpecialty">
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Engineering
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Geodesy
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Interior
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__skillsAbilities">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sem semper consectetur in nibh arcu ridiculus urna.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                            Fermentum urna pellentesque rhoncus commodo, maecenas tortor nisi, ut imperdiet.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aboutUs-block__infoPeople">
+                                <img src="./img/peoples/girl_three.jpg" alt="girl" title="girl" class="aboutUs-block__image">
+                                <div class="aboutUs-block__specialtyOne">
+                                    <a href="#" class="aboutUs-block__name">
+                                        John Fairley
+                                    </a><br>
+                                    <a href="#" class="aboutUs-block__informationSpeciality">
+                                        Chief Engineer
+                                    </a>
+                                </div>
+                                <div class="aboutUs-block__generalInfo">
+                                    <div class="aboutUs-block__girlInfo">
+                                        <div class="aboutUs-block__girlName">
+                                            <p class="aboutUs-block__nameSpecialist">
+                                                John Fairley
+                                            </p>
+                                            <p class="aboutUs-block__workSpecialist">
+                                                Chief Engineer
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__kindOfSpecialty">
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Engineering
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Geodesy
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Interior
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__skillsAbilities">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sem semper consectetur in nibh arcu ridiculus urna.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                            Fermentum urna pellentesque rhoncus commodo, maecenas tortor nisi, ut imperdiet.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aboutUs-block__infoPeople">
+                                <img src="./img/peoples/girl_two.jpg" alt="girl" title="girl" class="aboutUs-block__image">
+                                <div class="aboutUs-block__specialtyOne">
+                                    <a href="#" class="aboutUs-block__name">
+                                        John Fairley
+                                    </a><br>
+                                    <a href="#" class="aboutUs-block__informationSpeciality">
+                                        Chief Engineer
+                                    </a>
+                                </div>
+                                <div class="aboutUs-block__generalInfo">
+                                    <div class="aboutUs-block__girlInfo">
+                                        <div class="aboutUs-block__girlName">
+                                            <p class="aboutUs-block__nameSpecialist">
+                                                John Fairley
+                                            </p>
+                                            <p class="aboutUs-block__workSpecialist">
+                                                Chief Engineer
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__kindOfSpecialty">
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Engineering
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Geodesy
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Interior
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__skillsAbilities">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sem semper consectetur in nibh arcu ridiculus urna.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                            Fermentum urna pellentesque rhoncus commodo, maecenas tortor nisi, ut imperdiet.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aboutUs-block__infoPeople">
+                                <img src="./img/peoples/girl_three.jpg" alt="girl" title="girl" class="aboutUs-block__image">
+                                <div class="aboutUs-block__specialtyOne">
+                                    <a href="#" class="aboutUs-block__name">
+                                        John Fairley
+                                    </a><br>
+                                    <a href="#" class="aboutUs-block__informationSpeciality">
+                                        Chief Engineer
+                                    </a>
+                                </div>
+                                <div class="aboutUs-block__generalInfo">
+                                    <div class="aboutUs-block__girlInfo">
+                                        <div class="aboutUs-block__girlName">
+                                            <p class="aboutUs-block__nameSpecialist">
+                                                John Fairley
+                                            </p>
+                                            <p class="aboutUs-block__workSpecialist">
+                                                Chief Engineer
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__kindOfSpecialty">
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Engineering
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Geodesy
+                                            </p>
+                                            <p class="aboutUs-block__itemSpeciality">
+                                                Interior
+                                            </p>
+                                        </div>
+                                        <div class="aboutUs-block__skillsAbilities">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sem semper consectetur in nibh arcu ridiculus urna.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                            Fermentum urna pellentesque rhoncus commodo, maecenas tortor nisi, ut imperdiet.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Massa, faucibus urna arcu erat vitae elit.
+                                            Amet, nullam risus ac augue nunc eu fermentum lorem augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutUs-block__titleForForm">
+                Contact Us
             </div>
             <?php include 'form.php'; ?>
         </div>

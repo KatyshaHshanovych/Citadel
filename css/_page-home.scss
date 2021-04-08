@@ -1,0 +1,79 @@
+.page-home {
+  .header {
+    background: transparent;
+    position: initial;
+
+    &__links {
+      color: #F8FCFC;
+    }
+
+    &__logoLink {
+      background-image: url(../img/logo.png);
+    }
+
+    &__iconItem {
+      color: white;
+    }
+  }
+
+  .block-form-contacts {
+    margin: 0;
+    padding-bottom: 60px;
+
+    &__allBlocks {
+      padding-bottom: 0;
+    }
+    &__titleHeadOffice {
+      color: #FFFFFF;
+    }
+
+    &__generalInformation {
+      color: #FFFFFF;
+    }
+
+    &__titleRegionalOffice {
+      color: #FFFFFF;
+    }
+
+    &__button {
+      color: #FFFFFF;
+    }
+
+    &__inputForm {
+      background-color: transparent;
+      color: #FFFFFF;
+    }
+
+    &__labelForm {
+      color: #FFFFFF;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #FFFFFF;
+    }
+
+    &__titleForm {
+      color: #FFFFFF;
+    }
+
+    &__inputForm {
+      border: 1.5px solid #BDBDBD;
+      color: white;
+      font-family: workSansMedium;
+    }
+
+    &__selectPhone {
+      background: transparent;
+      color: white;
+
+      option {
+        background: #00adb5;
+      }
+    }
+
+    &__blockPhone {
+      border: 1px solid white;
+      display: flex;
+    }
+  }
+}

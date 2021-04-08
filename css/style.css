@@ -1,5 +1,67 @@
 @import "fonts.css";
 @import "font-awesome/font-awesome.min.css";
+.page-home .header {
+  background: transparent;
+  position: initial;
+}
+.page-home .header__links {
+  color: #F8FCFC;
+}
+.page-home .header__logoLink {
+  background-image: url(../img/logo.png);
+}
+.page-home .header__iconItem {
+  color: white;
+}
+.page-home .block-form-contacts {
+  margin: 0;
+  padding-bottom: 60px;
+}
+.page-home .block-form-contacts__allBlocks {
+  padding-bottom: 0;
+}
+.page-home .block-form-contacts__titleHeadOffice {
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__generalInformation {
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__titleRegionalOffice {
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__button {
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__inputForm {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__labelForm {
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__titleForm {
+  color: #FFFFFF;
+}
+.page-home .block-form-contacts__inputForm {
+  border: 1.5px solid #BDBDBD;
+  color: white;
+  font-family: workSansMedium;
+}
+.page-home .block-form-contacts__selectPhone {
+  background: transparent;
+  color: white;
+}
+.page-home .block-form-contacts__selectPhone option {
+  background: #00adb5;
+}
+.page-home .block-form-contacts__blockPhone {
+  border: 1px solid white;
+  display: flex;
+}
+
 * {
   outline: none;
 }
@@ -17,6 +79,13 @@ body {
 .header {
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+  z-index: 1;
+}
+.header__burger {
+  display: none;
 }
 .header__small {
   padding: 20px 0 22px 0;
@@ -38,11 +107,24 @@ body {
 }
 .header__links {
   font-size: 16px;
-  color: #F8FCFC;
+  color: #393E46;
   font-family: workSansMedium;
 }
-.header__iconTel {
+.header__links:hover {
+  color: #00ADB5;
+}
+.header__iconItem {
   margin-right: 24px;
+  color: black;
+}
+.header__iconItem i {
+  font-size: 24px;
+}
+.header__logoLink {
+  width: 152px;
+  height: 38px;
+  background-image: url(../img/logo_black.png);
+  display: block;
 }
 
 .footer {
@@ -203,8 +285,16 @@ body {
 .block-sliders__logoCompanies {
   overflow: hidden;
   margin-left: 50px;
-  width: 1100px;
+  width: 1050px;
   margin-right: 95px;
+}
+.block-sliders__logoCompanies .slick-prev {
+  right: 180px;
+  bottom: -115px;
+}
+.block-sliders__logoCompanies .slick-next {
+  right: 146px;
+  bottom: -180px;
 }
 .block-sliders__img {
   margin-right: 4px !important;
@@ -329,12 +419,18 @@ body {
   background-size: cover;
   width: 100%;
 }
+.blockContactUs__bigTitle {
+  font-size: 90px;
+  color: #FFFFFF;
+  font-family: workSansBlack;
+  text-align: center;
+}
 .blockContactUs__backgroundSecond {
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding: 120px 0;
+  padding: 120px 0 60px 0;
 }
 .blockContactUs__titleContactUs {
   text-align: center;
@@ -348,32 +444,32 @@ body {
 }
 
 .block-form-contacts {
-  margin-top: 60px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 .block-form-contacts__titleHeadOffice {
   font-size: 22px;
-  color: #FFFFFF;
+  color: #393E46;
   font-family: workSansBold;
 }
 .block-form-contacts__generalInformation {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #393E46;
   font-family: workSansRegular;
   line-height: 155%;
 }
 .block-form-contacts__titleRegionalOffice {
   font-size: 22px;
-  color: #FFFFFF;
+  color: #393E46;
   font-family: workSansBold;
 }
-.block-form-contacts__button {
+.block-form-contacts__buttonLink {
   font-size: 18px;
+  display: block;
   text-align: center;
   font-family: workSansSemiBold;
   color: #FFFFFF;
-  padding: 20px 80px;
+  padding: 20px 0;
   background: #00ADB5;
   margin-top: 40px;
 }
@@ -386,21 +482,42 @@ body {
 }
 .block-form-contacts__inputForm {
   height: 56px;
-  border: 1.5px solid #FFFFFF;
+  border: 1.5px solid #4E4E4E;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #BDBDBD;
   font-size: 18px;
   font-family: workSansMedium;
   padding: 15px 0px 20px 15px;
 }
+.block-form-contacts__inputForm:focus {
+  color: #393E46;
+}
+.block-form-contacts__inputForm.inputPhone {
+  border: 0;
+  padding: 0;
+  margin-left: 10px;
+  width: 100%;
+}
+.block-form-contacts__selectPhone {
+  background: transparent;
+  color: #393E46;
+  border: 0;
+  font-size: 21px;
+  padding: 0 10px;
+  position: relative;
+}
+.block-form-contacts__blockPhone {
+  border: 1.5px solid #4E4E4E;
+  display: flex;
+}
 .block-form-contacts__labelForm {
   font-size: 22px;
   font-family: workSansBold;
-  color: #FFFFFF;
+  color: #393E46;
   margin: 24px 0 15px 0;
 }
 .block-form-contacts input::-webkit-input-placeholder {
-  color: #FFFFFF;
+  color: #BDBDBD;
 }
 .block-form-contacts__infoForm {
   display: flex;
@@ -415,13 +532,19 @@ body {
   left: 46px;
   font-size: 22px;
   font-family: workSansBold;
-  color: #FFFFFF;
+  color: #393E46;
 }
 .block-form-contacts__regionalOffice {
   margin-top: 40px;
 }
 .block-form-contacts__contactsOne {
   margin-right: 277px;
+}
+.block-form-contacts__allBlocks {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
 }
 
 .geolocation {
@@ -431,6 +554,19 @@ body {
 
 .aboutUs-block {
   background: #FFFFFF;
+}
+.aboutUs-block__titleForForm {
+  font-size: 60px;
+  color: #393E46;
+  text-align: center;
+  font-family: workSansBlack;
+  padding-top: 120px;
+}
+.aboutUs-block__skillsAbilities {
+  padding-top: 24px;
+  font-size: 16px;
+  color: #393E46;
+  line-height: 155%;
 }
 .aboutUs-block__head {
   background: #E2F1F9;
@@ -462,7 +598,140 @@ body {
   color: #393E46;
   font-family: workSansRegular;
 }
+.aboutUs-block__slider {
+  background: #F8FCFC;
+}
+.aboutUs-block__specialist {
+  color: #393E46;
+  font-size: 60px;
+  font-family: workSansBlack;
+  text-align: center;
+  padding-top: 120px;
+}
+.aboutUs-block__specialty {
+  background: #393E46;
+  padding: 19px 0px 19px 30px;
+  bottom: 66px;
+  position: relative;
+}
+.aboutUs-block__infoPeople {
+  margin-right: 24px;
+}
+.aboutUs-block__infoPeople.slick-active {
+  width: 293px !important;
+}
+.aboutUs-block__infoPeople.slick-slide {
+  width: 475px;
+  height: 377px !important;
+}
+.aboutUs-block__infoPeople.slick-current {
+  display: flex;
+  width: 35% !important;
+  height: 377px;
+}
+.aboutUs-block__infoPeople.slick-current .aboutUs-block__generalInfo {
+  display: flex !important;
+}
+.aboutUs-block__infoPeople.slick-current .aboutUs-block__infoPeople {
+  display: flex;
+}
+.aboutUs-block__infoPeople.slick-current .aboutUs-block__specialty {
+  display: none;
+}
+.aboutUs-block__infoPeople.slick-current .aboutUs-block__image {
+  width: 315px;
+}
+.aboutUs-block__infoPeople.slick-current .aboutUs-block__specialtyOne {
+  display: none;
+}
+.aboutUs-block__name {
+  font-size: 22px;
+  color: #FFFFFF;
+  font-family: workSansBold;
+}
+.aboutUs-block__informationSpeciality {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: workSansMedium;
+  padding-top: 5px;
+}
+.aboutUs-block__girlInfo {
+  padding: 26px 37px 40px 25px;
+}
+.aboutUs-block__generalInfo {
+  display: none;
+  width: 550px;
+  background: #E2F1F9;
+  box-shadow: 0px 0px 4px rgba(90, 110, 121, 0.25);
+}
+.aboutUs-block__nameSpecialist {
+  font-size: 22px;
+  color: #393E46;
+  font-family: workSansBold;
+}
+.aboutUs-block__workSpecialist {
+  font-size: 16px;
+  color: #393E46;
+  font-family: workSansSemiBold;
+  padding: 10px 0 24px 0;
+}
+.aboutUs-block__itemSpeciality {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: workSansRegular;
+  background: #393E46;
+  width: 120px;
+  padding: 10px 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+.aboutUs-block__kindOfSpecialty {
+  display: flex;
+}
+.aboutUs-block__sliders {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 120px 0;
+}
+.aboutUs-block__image {
+  width: 315px;
+}
+.aboutUs-block__specialtyOne {
+  background: #393E46;
+  padding: 19px 0px 19px 30px;
+  bottom: 4px;
+  position: relative;
+}
+.aboutUs-block__allSlide {
+  width: 100%;
+  overflow: hidden;
+}
+.aboutUs-block__allSlide .slick-track {
+  display: flex;
+}
+.aboutUs-block__allSlide .slick-arrow {
+  color: #00ADB5;
+}
+.aboutUs-block__allSlide .slick-next {
+  color: #00ADB5;
+  margin-top: 24px;
+  margin-right: 0px;
+}
+.aboutUs-block__allSlide .slick-prev {
+  margin-top: 401px;
+  margin-right: 58px;
+}
+.aboutUs-block__image {
+  width: 100%;
+}
 
+.ourServices-block__titleFormBlockServices {
+  font-size: 60px;
+  color: #393E46;
+  font-family: workSansBlack;
+  text-align: center;
+  padding-top: 120px;
+}
 .ourServices-block__head {
   text-align: center;
   background: #393E46;
@@ -480,7 +749,7 @@ body {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   grid-template-rows: repeat(2, 1fr);
-  padding: 120px 0;
+  padding: 120px 0 60px 0;
 }
 .ourServices-block__titleGrid {
   font-size: 24px;
@@ -500,9 +769,533 @@ body {
   font-family: workSansSemiBold;
 }
 .ourServices-block__informGrid {
-  padding: 56px 32px;
+  padding: 42px 32px;
   border-top: 4px solid #00ADB5;
   background: #E2F1F9;
+}
+.ourServices-block__informGrid:hover {
+  border-top: 0;
+  background: #00ADB5;
+}
+.ourServices-block__informGrid:hover .ourServices-block__titleGrid {
+  color: #FFFFFF;
+}
+.ourServices-block__informGrid:hover .ourServices-block__news {
+  color: #FFFFFF;
+  line-height: 125%;
+}
+.ourServices-block__informGrid:hover .ourServices-block__linkReadMore {
+  color: #FFFFFF;
+}
+.ourServices-block__imgBlock {
+  position: absolute;
+  top: 347px;
+  display: none;
+}
+.ourServices-block__FormThisBlock {
+  background: #F8FCFC;
+  width: 100%;
+}
+
+.block-error {
+  background-image: url("/img/background_error.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.block-error__returnHomeButton {
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 12px 32px;
+  background: #00ADB5;
+  font-family: workSansSemiBold;
+}
+.block-error__returnHomeButton:hover {
+  background: transparent;
+}
+.block-error__notFoundLeft {
+  width: 729px;
+  padding: 226px 0;
+}
+.block-error__title {
+  font-size: 60px;
+  color: #FFFFFF;
+  font-family: workSansBlack;
+}
+.block-error__descriptionError {
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 16px 0 40px 0;
+  line-height: 155%;
+  font-family: workSansRegular;
+}
+
+.contacts__bigTitle {
+  text-align: center;
+  padding: 36px 0;
+  background: #00ADB5;
+}
+.contacts__green {
+  font-size: 60px;
+  color: #FFFFFF;
+  font-family: workSansBlack;
+}
+.contacts__location {
+  width: 100%;
+}
+.contacts .block-form-contacts__BigTitleForm {
+  display: none;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.block-mobile {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1500px) {
+  .header__small {
+    padding: 20px 24px 22px 24px;
+  }
+
+  .block-aboutSite__left {
+    margin: 40px 0 0 24px;
+  }
+
+  .block-sliders__images {
+    margin: 0 65px 0px 25px;
+  }
+  .block-sliders__logoCompanies .slick-prev {
+    right: 95px;
+  }
+  .block-sliders__logoCompanies .slick-next {
+    right: 60px;
+    bottom: -195px;
+  }
+
+  .buildingLicenses {
+    padding-bottom: 140px;
+  }
+  .buildingLicenses__left {
+    margin: 0 auto;
+    width: 650px;
+  }
+  .buildingLicenses__grids {
+    padding-top: 60px;
+    width: 650px;
+    grid-template-columns: repeat(2, 312px);
+    margin: 0 auto;
+  }
+  .buildingLicenses__title {
+    font-size: 66px;
+  }
+  .buildingLicenses__allBlocks {
+    display: block;
+    margin-bottom: 0;
+    padding-top: 60px;
+  }
+  .buildingLicenses__button {
+    position: relative;
+    top: 50px;
+    text-align: center;
+  }
+
+  .blockContactUs__backgroundSecond {
+    padding: 58px 0;
+  }
+
+  .block-form-contacts {
+    margin: 0;
+  }
+  .block-form-contacts__contactsOne {
+    margin-right: 40px;
+  }
+
+  .block-center {
+    width: 100%;
+  }
+
+  .footer__first {
+    justify-content: space-around;
+  }
+  .footer__titleThird {
+    left: 0;
+  }
+
+  .aboutUs-block__infoText {
+    width: 90%;
+  }
+  .aboutUs-block__generalInfo {
+    display: none !important;
+  }
+
+  .ourServices-block__grid {
+    width: 737px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 356px);
+  }
+
+  .block-error__notFoundLeft {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer__first {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 40px 0;
+  }
+  .footer__headOffice {
+    height: auto;
+    margin-top: 25px;
+  }
+  .footer__regionalOffice {
+    height: auto;
+    margin-top: 25px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__titleSecond {
+    text-align: center;
+    position: unset;
+    font-size: 25px;
+  }
+  .footer__titleThird {
+    text-align: center;
+    position: unset;
+  }
+  .footer__contactInfo {
+    font-size: 16px;
+  }
+  .footer__copyright {
+    font-size: 16px;
+  }
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer .siteImage {
+    position: initial;
+    top: 0;
+  }
+  .footer__contactIcon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer__titleOne {
+    font-size: 25px;
+  }
+  .footer__mainInfo {
+    display: flex;
+    text-align: center;
+    padding-bottom: 14px;
+    flex-direction: column;
+  }
+  .footer__mainInfo:last-child {
+    padding-bottom: 0;
+  }
+
+  .block-form-contacts__allBlocks {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  .blockContactUs__bigTitle {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .blockContactUs__backgroundSecond {
+    padding-bottom: 0;
+  }
+
+  .ourServices-block__titleFormBlockServices {
+    margin-bottom: 20px;
+    padding-top: 60px;
+  }
+
+  .aboutUs-block__titleForForm {
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+
+  .contacts__backMap {
+    margin-bottom: 60px;
+  }
+
+  .block-error {
+    background-position: right;
+  }
+
+  .block-aboutSite {
+    background-position: right;
+  }
+}
+@media screen and (max-width: 800px) {
+  .aboutUs-block__allSlide {
+    width: 90%;
+  }
+  .aboutUs-block__girlInfo {
+    width: 100%;
+  }
+  .aboutUs-block__skillsAbilities {
+    font-size: 13px;
+  }
+  .aboutUs-block__infoPeople.slick-slide {
+    width: 900px !important;
+  }
+  .aboutUs-block__infoPeople.slick-current {
+    width: 25% !important;
+  }
+  .aboutUs-block__infoPeople.slick-current .aboutUs-block__generalInfo {
+    width: 395px;
+  }
+
+  .block-sliders__img {
+    width: 465px !important;
+  }
+}
+@media screen and (max-width: 695px) {
+  .block-mobile {
+    display: block;
+  }
+
+  .header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  .header__small {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    background: white;
+  }
+  .header__hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: white;
+    padding: 0 20px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__items {
+    margin-right: 0;
+  }
+  .header__navItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .header__navMenu {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+  }
+  .header__navMenu li {
+    margin-right: 0;
+    border-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .header__navMenu li a {
+    font-size: 20px;
+  }
+  .header__navigation {
+    display: flex;
+  }
+  .header__blockIconContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__iconItem i {
+    font-size: 35px;
+  }
+
+  .page-home .header__small {
+    background: #00adb5;
+  }
+  .page-home .header__hamburger {
+    background: #00adb5;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__blockIconContact {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__small {
+    padding: 0px 8px 0px 16px;
+  }
+  .header__navLink {
+    margin-bottom: 15px;
+  }
+
+  .block-aboutSite {
+    height: auto;
+    background-position: right;
+  }
+  .block-aboutSite__left {
+    margin: 0 0 0 -30px;
+    width: 300px;
+    padding-bottom: 35px;
+    margin-left: 16px;
+  }
+  .block-aboutSite__title {
+    font-size: 24px;
+  }
+  .block-aboutSite__text {
+    padding: 2px 0 14px 0;
+    width: 256px;
+    font-size: 14px;
+  }
+  .block-aboutSite__buttons {
+    padding-top: 10px;
+  }
+  .block-aboutSite__link {
+    margin-right: 10px;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+
+  .block-sliders {
+    width: 100%;
+  }
+  .block-sliders__quantity {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .block-sliders__texts {
+    font-size: 20px;
+  }
+  .block-sliders__thirty {
+    font-size: 20px;
+    font-family: workSansMedium;
+  }
+  .block-sliders__images {
+    display: block;
+    margin: 0;
+    padding: 35px 0;
+  }
+  .block-sliders__logoCompanies {
+    margin-left: 0;
+    width: 228px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .block-sliders__img {
+    width: 300px !important;
+  }
+
+  .slick-track {
+    width: 320px !important;
+    display: flex;
+  }
+
+  .slick-list {
+    padding: 30px 0px;
+  }
+
+  .slick-prev {
+    right: 180px !important;
+    bottom: 217px !important;
+  }
+
+  .slick-next {
+    right: 109px !important;
+    bottom: 217px !important;
+  }
+
+  .buildingLicenses__title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .buildingLicenses__grids {
+    width: 281px;
+    padding-top: 40px;
+    grid-template-columns: repeat(1, 280px);
+  }
+  .buildingLicenses__titleGrid {
+    font-size: 20px;
+  }
+  .buildingLicenses__article {
+    font-size: 14px;
+  }
+  .buildingLicenses__info {
+    padding: 25px 32px;
+  }
+  .buildingLicenses__link {
+    padding: 20px 8px;
+  }
+  .buildingLicenses__left {
+    text-align: justify;
+    width: 280px;
+  }
+  .buildingLicenses__description {
+    font-size: 14px;
+  }
+
+  .blockContactUs__bigTitle {
+    font-size: 50px;
+  }
+
+  .block-form-contacts__allBlocks {
+    display: block;
+  }
+  .block-form-contacts__contactsOne {
+    margin: 0 auto;
+    width: 265px;
+  }
+  .block-form-contacts__generalInformation {
+    font-size: 14px;
+  }
+  .block-form-contacts__titleForm {
+    left: 0;
+    text-align: center;
+  }
+  .block-form-contacts__infoForm {
+    position: relative;
+    width: 213px;
+    margin: 0 auto;
+  }
+
+  .blockContactUs-form {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .footer__contactInfo {
+    font-size: 14px;
+  }
+  .footer__copyright {
+    font-size: 14px;
+  }
+
+  .siteImage {
+    top: -57px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

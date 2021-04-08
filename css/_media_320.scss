@@ -1,0 +1,210 @@
+@media screen and (max-width: 320px) {
+
+  .header {
+    &__navMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__blockIconContact {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &__small {
+      padding: 0px 8px 0px 16px;
+    }
+
+    &__navLink {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .block-aboutSite {
+    height: auto;
+    background-position: right;
+
+    &__left {
+      margin: 0 0 0 -30px;
+      width: 300px;
+      padding-bottom: 35px;
+      margin-left: 16px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      padding: 2px 0 14px 0;
+      width: 256px;
+      font-size: 14px;
+    }
+
+    &__buttons {
+      padding-top: 10px;
+    }
+
+    &__link {
+      margin-right: 10px;
+      padding: 12px 10px;
+      font-size: 12px;
+    }
+  }
+
+  .block-sliders {
+    width: 100%;
+
+    &__quantity {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__texts {
+      font-size: 20px;
+    }
+
+    &__thirty {
+      font-size: 20px;
+      font-family: workSansMedium;
+    }
+
+    &__images {
+      display: block;
+      margin: 0;
+      padding: 35px 0;
+    }
+
+    &__logoCompanies {
+      margin-left: 0;
+      width: 228px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    &__img {
+      width: 300px !important;
+    }
+  }
+
+  .slick-track {
+    width: 320px !important;
+    display: flex;
+
+  }
+
+  .slick-list {
+    padding: 30px 0px;
+  }
+
+  .slick-prev {
+    right: 180px !important;
+    bottom: 217px !important;
+  }
+
+  .slick-next {
+    right: 109px !important;
+    bottom: 217px !important;
+  }
+
+  .buildingLicenses {
+
+
+    &__title {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__grids {
+      width: 281px;
+      padding-top: 40px;
+      grid-template-columns: repeat(1, 280px);
+    }
+
+    &__titleGrid {
+      font-size: 20px;
+    }
+
+    &__article {
+      font-size: 14px;
+    }
+
+    &__info {
+      padding: 25px 32px;
+    }
+
+    &__link {
+      padding: 20px 8px;
+    }
+
+    &__left {
+      text-align: justify;
+      width: 280px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
+
+  .blockContactUs {
+
+    &__bigTitle {
+      font-size: 50px;
+    }
+  }
+
+  .block-form-contacts {
+
+    &__allBlocks {
+      display: block;
+    }
+
+    &__contactsOne {
+      margin: 0 auto;
+      width: 265px;
+    }
+
+    &__generalInformation {
+      font-size: 14px;
+    }
+
+    &__titleForm {
+      left: 0;
+      text-align: center;
+    }
+
+    &__infoForm {
+      position: relative;
+      width: 213px;
+      margin: 0 auto;
+    }
+  }
+
+  .blockContactUs-form {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .footer {
+
+    &__contactInfo {
+      font-size: 14px;
+    }
+
+    &__copyright {
+      font-size: 14px;
+    }
+  }
+
+  .siteImage {
+    top: -57px;
+  }
+}

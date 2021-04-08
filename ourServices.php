@@ -20,6 +20,9 @@
             </div>
             <div class="block-center">
                 <div class="ourServices-block__grid">
+                    <div class="ourServices-block__imgBlock">
+                        <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
+                    </div>
                     <div class="ourServices-block__informGrid">
                         <div class="ourServices-block__titleGrid">
                             Legislation Of Illegal Construction
@@ -149,6 +152,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="ourServices-block__FormThisBlock">
+                <div class="ourServices-block__titleFormBlockServices">
+                    Contact Us
+                </div>
+                <?php include 'form.php'; ?>
             </div>
         </div>
         <?php include 'footer.php'; ?>

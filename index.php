@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="block-main">
+    <div class="block-main page-home">
         <div class="block-aboutSite">
             <?php include 'header.php'; ?>
             <div class="block-center">
@@ -51,6 +51,7 @@
                         <img src="./img/networkRail.png" alt="img" title="img" class="block-sliders__img">
                         <img src="./img/balfourBeatty.png" alt="img" title="img" class="block-sliders__img">
                         <img src="./img/hochTief.png" alt="img" title="img" class="block-sliders__img">
+                        <img src="./img/skanska.png" alt="img" title="img" class="block-sliders__img">
                         <img src="./img/skanska.png" alt="img" title="img" class="block-sliders__img">
                         <img src="./img/skanska.png" alt="img" title="img" class="block-sliders__img">
                     </div>
@@ -168,7 +169,7 @@
         </div>
         <div class="blockContactUs">
             <div class="blockContactUs__backgroundSecond">
-                <div class="blockContactUs__titleContactUs">
+                <div class="blockContactUs__bigTitle">
                     Contact Us
                 </div>
                 <?php include 'form.php'; ?>
