@@ -7,7 +7,7 @@
                 </div>
                 <div class="block-form-contacts__infoForm">
                     <div class="block-form-contacts__icon geolocation">
-                        <img src="./img/colorIcon/spot_1.png" alt="img" title="img">
+                        <img src="./img/colorIcon/spot_icon.png" alt="img" title="img">
                     </div>
                     <div class="block-form-contacts__generalInformation">
                         Lorclon House 139B The Broadway West Ealing,<br>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="block-form-contacts__infoForm">
                     <div class="block-form-contacts__icon">
-                        <img src="./img/colorIcon/call_2.png" alt="call" title="call">
+                        <img src="./img/colorIcon/call_icon.png" alt="call" title="call">
                     </div>
                     <div class="block-form-contacts__generalInformation">
                         020 8904 9272
@@ -24,7 +24,7 @@
                 </div>
                 <div class="block-form-contacts__infoForm">
                     <div class="block-form-contacts__icon">
-                        <img src="./img/colorIcon/fax.png" alt="fax" title="fax">
+                        <img src="./img/colorIcon/fax_icon.png" alt="fax" title="fax">
                     </div>
                     <div class="block-form-contacts__generalInformation">
                         020 8904 9262
@@ -32,7 +32,7 @@
                 </div>
                 <div class="block-form-contacts__infoForm">
                     <div class="block-form-contacts__icon">
-                        <img src="./img/colorIcon/message_2.png" alt="email" title="email">
+                        <img src="./img/colorIcon/message_icon.png" alt="email" title="email">
                     </div>
                     <div class="block-form-contacts__generalInformation">
                         office@lorclon.com
@@ -45,7 +45,7 @@
                 </div>
                 <div class="block-form-contacts__infoForm">
                     <div class="block-form-contacts__icon geolocation">
-                        <img src="./img/colorIcon/spot_1.png" alt="img" title="img">
+                        <img src="./img/colorIcon/spot_icon.png" alt="img" title="img">
                     </div>
                     <div class="block-form-contacts__generalInformation">
                         Lorclon Yard, Arden Eco Park Coventry Road,<br>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="block-form-contacts__infoForm">
                     <div class="block-form-contacts__icon">
-                        <img src="./img/colorIcon/call_2.png" alt="call" title="call">
+                        <img src="./img/colorIcon/call_icon.png" alt="call" title="call">
                     </div>
                     <div class="block-form-contacts__generalInformation">
                         0121 661 7488
@@ -71,23 +71,10 @@
                     <input class="block-form-contacts__inputForm" id="Name" type="text" placeholder="Name">
                 </div>
                 <div class="block-form-contacts__groupInput">
-                    <label for="Phone" class="block-form-contacts__labelForm">
+                    <label for="Telephone" class="block-form-contacts__labelForm">
                         Phone
                     </label>
-                    <div class="block-form-contacts__blockPhone">
-                        <select name="" id="" class="block-form-contacts__selectPhone">
-                            <option value="+52">
-                                +52
-                            </option>
-                            <option value="+38">
-                                +38
-                            </option>
-                            <option value="1">
-                                +1
-                            </option>
-                        </select>
-                        <input class="block-form-contacts__inputForm inputPhone" id="Phone" type="tel" placeholder="047 3789 3891">
-                    </div>
+                    <input type="tel" id="Telephone" placeholder="047 3789 3891" class="block-form-contacts__inputForm">
                 </div>
                 <div class="block-form-contacts__groupInput">
                     <label for="Email" class="block-form-contacts__labelForm">

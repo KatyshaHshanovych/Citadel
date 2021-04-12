@@ -12,7 +12,8 @@ $height-slide: 377px;
 
 body {
    color: #393E46;
-   font-family: workSansRegular, serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -28,6 +29,7 @@ body {
     top: 0;
     background: #FFFFFF;
     z-index: 1;
+    padding-top: 10px;
 
     &__burger {
         display: none;
@@ -41,29 +43,6 @@ body {
         background: transparent;
     }
 
-    &__navMenu {
-        display: flex;
-    }
-
-    &__navLink {
-        margin-right: 40px;
-        border-bottom: 2px solid white;
-        padding-bottom: 8px;
-
-        &:nth-child(4) {
-            margin-right: 0;
-        }
-    }
-
-    &__links {
-        font-size: 16px;
-        color: #393E46;
-        font-family: workSansMedium;
-        &:hover {
-            color: #00ADB5;
-        }
-    }
-
     &__iconItem {
         margin-right: 24px;
         color: black;
@@ -74,10 +53,40 @@ body {
 
 
     &__logoLink {
-        width: 152px;
-        height: 38px;
-        background-image: url(../img/logo_black.png);
+        width: 172px;
+        height: 41px;
+        background-image: url(../img/logo_header.png);
         display: block;
+    }
+}
+
+.menu {
+    ul {
+        display: flex;
+        li {
+            margin-right: 40px;
+            border-bottom: 2px solid white;
+            padding-bottom: 8px;
+
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+
+            &.active {
+                a {
+                    color: #64B8EB;
+                }
+            }
+
+            a {
+                font-size: 16px;
+                font-family: workSansMedium;
+                color: #393E46;
+                &:hover {
+                    color: #64B8EB;
+                }
+            }
+        }
     }
 }
 
@@ -198,14 +207,14 @@ body {
 
     &__title {
         font-size: 90px;
-        font-family: workSansBlack;
+        font-family: PoppinsBlack;
         color: #F8FCFC;
     }
 
     &__text {
         font-size: 22px;
         color: #F8FCFC;
-        font-family: workSansRegular;
+        line-height: 135%;
     }
 
     &__left {
@@ -217,9 +226,10 @@ body {
         font-size: 14px;
         color: #F8FCFC;
         font-family: workSansSemiBold;
-        @include background-color;
+        background: #64B8EB;
         margin-right: 24px;
         padding: 20px 42px;
+        border: 1.5px solid transparent;
 
         &:nth-last-child(1) {
             margin-right: 0;
@@ -228,6 +238,7 @@ body {
 
         &:hover {
             background: transparent;
+            border: 1.5px solid #FFFFFF;
         }
     }
 
@@ -242,74 +253,6 @@ body {
 
 
 
-.block-sliders {
-    background: #E2F1F9;
-
-    &__texts {
-        font-size: 22px;
-        color: #393E46;
-        font-family: workSansMedium;
-    }
-
-    &__thirty {
-        font-size: 52px;
-        font-family: workSansBold;
-    }
-
-    &__quantity {
-        padding: 68px 0;
-    }
-
-    &__logoCompanies {
-        overflow: hidden;
-        margin-left: 50px;
-        width: 1050px;
-        margin-right: 95px;
-
-        .slick-prev {
-            right: 180px;
-            bottom: -115px;
-        }
-
-        .slick-next {
-            right: 146px;
-            bottom: -180px;
-        }
-    }
-
-    &__img {
-        margin-right: 4px !important;
-        width: 260px !important;
-    }
-
-    &__images {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
-
-
-.slick-arrow {
-    position: absolute;
-    font-size: 40px;
-    background: transparent;
-    color: #393E46;
-    opacity: 0.4;
-    right: 216px;
-    margin-top: -30px;
-
-    &:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
-
-    &__images {
-        display: flex;
-    }
-}
-
 .buildingLicenses {
     padding-bottom: 112px;
     background: #F8FCFC;
@@ -321,7 +264,7 @@ body {
     &__title {
         font-size: 90px;
         color: #393E46;
-        font-family: workSansBlack;
+        font-family: PoppinsBlack;
     }
 
     &__description {
@@ -329,7 +272,7 @@ body {
         line-height: 135%;
         color: #393E46;
         padding-top: 32px;
-        font-family: workSansRegular;
+        font-family: workSansMedium;
     }
 
     &__link {
@@ -338,7 +281,7 @@ body {
         padding: 20px 42px;
         letter-spacing: 0.03em;
         font-family: workSansSemiBold;
-        @include background-color;
+        background: #64B8EB;
         text-transform: uppercase;
     }
 
@@ -361,10 +304,10 @@ body {
     &__info {
         background: #E2F1F9;
         padding: 56px 32px;
-        border-top: 4px solid #00ADB5;
+        border-top: 4px solid #64B8EB;
 
         &:hover {
-            @include background-color;
+            background: #64B8EB;
             color: #F8FCFC;
 
             .buildingLicenses__titleGrid {
@@ -373,6 +316,7 @@ body {
 
             .buildingLicenses__article {
                 color: #F8FCFC;
+                line-height: 135%;
             }
 
             .buildingLicenses__linkReadMore {
@@ -384,7 +328,7 @@ body {
     &__article {
         font-size: 16px;
         color: #393E46;
-        font-family: workSansRegular;
+        font-family: workSansMedium;
         padding: 24px 0;
         line-height: 135%;
 
@@ -396,10 +340,10 @@ body {
     &__linkReadMore {
         font-size: 14px;
         font-family: workSansSemiBold;
-        color: #00ADB5;
+        color: #64B8EB;
 
         &:hover {
-            @include background-color;
+            background: #64B8EB;
             color: #F8FCFC;
         }
     }
@@ -462,7 +406,7 @@ body {
     }
 
     &__generalInformation {
-        font-size: 18px;
+        font-size: 16px;
         color: $color-form;
         font-family: workSansRegular;
         line-height: 155%;
@@ -480,7 +424,7 @@ body {
         font-family: workSansSemiBold;
         color: #FFFFFF;
         padding: 20px 0;
-        background: #00ADB5;
+        background: #64B8EB;
         margin-top: 40px;
         width: 100%;
         cursor: pointer;
@@ -503,7 +447,7 @@ body {
         background-color: transparent;
         color: #BDBDBD;
         font-size: 18px;
-        font-family: workSansMedium;
+        font-family: workSansRegular;
         padding: 15px 0px 20px 15px;
 
         &:focus {
@@ -518,14 +462,6 @@ body {
         }
     }
 
-    &__selectPhone {
-        background: transparent;
-        color: $color-form;
-        border: 0;
-        font-size: 21px;
-        padding: 0 10px;
-        position: relative;
-    }
 
     &__blockPhone {
         border: 1.5px solid #4E4E4E;
@@ -587,8 +523,8 @@ body {
     background: #FFFFFF;
 
     &__titleForForm {
-        font-size: 60px;
-        color: #393E46;
+        font-size: 45px;
+        color: #64B8EB;
         text-align: center;
         font-family: workSansBlack;
         padding-top: 120px;
@@ -602,16 +538,15 @@ body {
     }
 
     &__head {
-        background: #E2F1F9;
+        background: #64B8EB;
         text-align: center;
         padding: 38px 0;
     }
 
     &__linkAboutUs {
-        font-size: 60px;
-        color: #00ADB5;
+        font-size: 45px;
+        color: #FFFFFF;
         font-family: workSansBlack;
-        background: #E2F1F9;
     }
 
     &__infoText {
@@ -627,172 +562,33 @@ body {
         color: #393E46;
         font-family: workSansRegular;
         margin-right: 24px;
+        width: 594px;
     }
+
 
     &__explanationSecond {
         font-size: 18px;
         line-height: 155%;
         color: #393E46;
+        width: 580px;
         font-family: workSansRegular;
     }
 
-    &__slider {
-        background: #F8FCFC;
+    &__form {
+        background: #FCFCFC;
     }
 
-    &__specialist {
-        color: #393E46;
-        font-size: 60px;
-        font-family: workSansBlack;
-        text-align: center;
-        padding-top: 120px;
-    }
+}
 
-    &__specialty {
-        background: #393E46;
-        padding: 19px 0px 19px 30px;
-        bottom: 66px;
-        position: relative;
-    }
-
-    &__infoPeople {
-        margin-right: 24px;
-
-        // Slider
-        &.slick-active {
-            width: 293px !important;
-        }
-
-        &.slick-slide {
-            width: 475px;
-            height: $height-slide !important;
-        }
-
-        &.slick-current {
-            display: flex;
-            width: 35% !important;
-            height: $height-slide;
-            .aboutUs-block {
-                &__generalInfo {
-                    display: flex !important;
-                }
-                &__infoPeople {
-                    display: flex;
-                }
-                &__specialty {
-                    display: none;
-                }
-                &__image {
-                    width: 315px;
-                }
-                &__specialtyOne {
-                    display: none;
-                }
-            }
-        }
-    }
-
-    &__name {
-        font-size: 22px;
-        color: #FFFFFF;
-        font-family: workSansBold;
-    }
-
-    &__informationSpeciality {
-        font-size: 16px;
-        color: #FFFFFF;
-        font-family: workSansMedium;
-        padding-top: 5px;
-    }
-
-    &__girlInfo {
-        padding: 26px 37px 40px 25px;
-    }
-
-    &__generalInfo {
-        display: none;
-        width: 550px;
-        background: #E2F1F9;
-        box-shadow: 0px 0px 4px rgba(90, 110, 121, 0.25);
-    }
-
-    &__nameSpecialist {
-        font-size: 22px;
-        color: $color-form;
-        font-family: workSansBold;
-    }
-
-    &__workSpecialist {
-        font-size: 16px;
-        color: $color-form;
-        font-family: workSansSemiBold;
-        padding: 10px 0 24px 0;
-    }
-
-    &__itemSpeciality {
-        color: #FFFFFF;
-        font-size: 14px;
-        font-family: workSansRegular;
-        background: $color-form;
-        width: 120px;
-        padding: 10px 20px;
-        text-align: center;
-        margin-right: 10px;
-    }
-
-    &__kindOfSpecialty {
-        display: flex;
-    }
-
-    &__sliders {
-        display: flex;
-        justify-content: center;
-        padding: 60px 0 120px 0;
-    }
-
-    &__image {
-        width: 315px;
-    }
-
-    &__specialtyOne {
-        background: #393E46;
-        padding: 19px 0px 19px 30px;
-        bottom: 4px;
-        position: relative;
-    }
-
-    &__allSlide {
-        width: 100%;
-        overflow: hidden;
-
-        .slick-track {
-            display: flex;
-        }
-
-        .slick-arrow {
-            color: #00ADB5;
-        }
-        .slick-next {
-            color: #00ADB5;
-            margin-top: 24px;
-            margin-right: 0px;
-        }
-        .slick-prev {
-            margin-top: 401px;
-            margin-right: 58px;
-        }
-    }
-
-    &__image {
-        width: 100%;
-    }
+.speciality {
+    bottom: 75px;
 }
 
 .ourServices-block {
 
     &__titleFormBlockServices {
-        font-size: 60px;
-        color: #393E46;
+        font-size: 45px;
+        color: #64B8EB;
         font-family: workSansBlack;
         text-align: center;
         padding-top: 120px;
@@ -805,7 +601,7 @@ body {
     }
 
     &__linkBlack {
-        font-size: 60px;
+        font-size: 45px;
         color: #FFFFFF;
         font-family: workSansBlack;
     }
@@ -831,22 +627,23 @@ body {
         color: #393E46;
         line-height: 135%;
         padding: 24px 0;
-        font-family: workSansRegular;
+        font-family: workSansMedium;
     }
 
     &__linkReadMore {
         font-size: 14px;
-        color: #00ADB5;
+        color: #64B8EB;
         font-family: workSansSemiBold;
     }
 
     &__informGrid {
         padding: 42px 32px;
-        border-top: 4px solid #00ADB5;
         background: #E2F1F9;
+        height: 380px;
+        position: relative;
 
         &:hover {
-            @include background-color;
+            background: #64B8EB;
 
             .ourServices-block__titleGrid {
                 color: #FFFFFF;
@@ -856,21 +653,52 @@ body {
                 color: #FFFFFF;
             }
 
+            .ourServices-block__linkContactUs {
+                display: flex;
+            }
             .ourServices-block__linkReadMore {
                 color: #FFFFFF;
+                display: none;
+            }
+
+            .ourServices-block__imgBlock {
+                left: 380px;
+                opacity: 1;
             }
         }
     }
 
     &__imgBlock {
         position: absolute;
-        top: 347px;
-        display: none;
+        top: -4px;
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+        transition: .5s;
     }
 
     &__FormThisBlock {
         background: #F8FCFC;
         width: 100%;
+    }
+    //
+    //&__imageItem {
+    //    width: 380px;
+    //    object-fit: cover;
+    //    height: 380px;
+    //}
+
+    &__linkContactUs {
+        display: none;
+        width: 143px;
+        font-size: 14px;
+        padding: 12px 0;
+        color: #F8FCFC;
+        font-family: workSansSemiBold;
+        border: 1px solid #F8FCFC;
+        text-transform: uppercase;
+        justify-content: center;
+        position:relative;
     }
 }
 
@@ -884,7 +712,7 @@ body {
         font-size: 18px;
         color: #FFFFFF;
         padding: 12px 32px;
-        @include background-color;
+        background: #64B8EB;
         font-family: workSansSemiBold;
 
         &:hover {
@@ -917,11 +745,11 @@ body {
     &__bigTitle {
         text-align: center;
         padding: 36px 0;
-        @include background-color;
+        background: #64B8EB;
     }
 
     &__green {
-        font-size: 60px;
+        font-size: 45px;
         color: #FFFFFF;
         font-family: workSansBlack;
     }
@@ -933,6 +761,10 @@ body {
 
     .block-form-contacts__BigTitleForm {
         display: none;
+    }
+
+    &__map {
+        width: 100%;
     }
 }
 
@@ -954,5 +786,18 @@ body {
 @import "_media_695.scss";
 @import "_media_320.scss";
 @import "_media_425.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

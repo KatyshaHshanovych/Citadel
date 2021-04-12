@@ -3,7 +3,7 @@
         <div class="footer__first">
             <div class="footer__logo siteImage">
                 <a href="/">
-                    <img src="./img/logo.png" alt="logo" title="logo">
+                    <img src="./img/logo_icon.png" alt="logo" title="logo">
                 </a>
             </div>
             <div class="footer__aboutCompany">
@@ -17,7 +17,7 @@
                         </a>
                     </li>
                     <li class="footer__list">
-                        <a href="/" class="footer__links">
+                        <a href="/aboutUs.php" class="footer__links">
                             What We Do
                         </a>
                     </li>
@@ -109,5 +109,6 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/google_maps.js"></script>
 <script src="js/script.js"></script>
 

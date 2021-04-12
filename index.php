@@ -33,38 +33,13 @@
                 </div>
             </div>
         </div>
-        <div class="block-sliders">
-            <div class="block-center">
-                <div class="block-sliders__images">
-                    <div class="block-sliders__quantity">
-                        <div class="block-sliders__texts">
-                            We work With
-                        </div>
-                        <div class="block-sliders__thirty">
-                            30+
-                        </div>
-                        <div class="block-sliders__texts">
-                            clients
-                        </div>
-                    </div>
-                    <div class="block-sliders__logoCompanies">
-                        <img src="./img/networkRail.png" alt="img" title="img" class="block-sliders__img">
-                        <img src="./img/balfourBeatty.png" alt="img" title="img" class="block-sliders__img">
-                        <img src="./img/hochTief.png" alt="img" title="img" class="block-sliders__img">
-                        <img src="./img/skanska.png" alt="img" title="img" class="block-sliders__img">
-                        <img src="./img/skanska.png" alt="img" title="img" class="block-sliders__img">
-                        <img src="./img/skanska.png" alt="img" title="img" class="block-sliders__img">
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="buildingLicenses">
             <div class="block-center">
                 <div class="buildingLicenses__allBlocks">
                     <div class="buildingLicenses__left">
                         <div class="buildingLicenses__topText">
                             <div class="buildingLicenses__title">
-                                Welcome to Citadel
+                                Welcome <br /> to Citadel
                             </div>
                             <div class="buildingLicenses__description">
                                 Citadel are an ISO accredited company with ISO 14001, ISO 9001 and ISO 4001.
@@ -92,7 +67,7 @@
                                     Turpis eget donec et facilisi dui pellentesque.
                                 </div>
                                 <div class="buildingLicenses__readMore">
-                                    <a href="#" class="buildingLicenses__linkReadMore">
+                                    <a href="/ourServices.php" class="buildingLicenses__linkReadMore">
                                         READ MORE
                                     </a>
                                 </div>
@@ -112,7 +87,7 @@
                                     Turpis eget donec et facilisi dui pellentesque.
                                 </div>
                                 <div class="buildingLicenses__readMore">
-                                    <a href="#" class="buildingLicenses__linkReadMore">
+                                    <a href="/ourServices.php" class="buildingLicenses__linkReadMore">
                                         READ MORE
                                     </a>
                                 </div>
@@ -132,7 +107,7 @@
                                     Turpis eget donec et facilisi dui pellentesque.
                                 </div>
                                 <div class="buildingLicenses__readMore">
-                                    <a href="#" class="buildingLicenses__linkReadMore">
+                                    <a href="/ourServices.php" class="buildingLicenses__linkReadMore">
                                         READ MORE
                                     </a>
                                 </div>
@@ -152,7 +127,7 @@
                                     Turpis eget donec et facilisi dui pellentesque.
                                 </div>
                                 <div class="buildingLicenses__readMore">
-                                    <a href="#" class="buildingLicenses__linkReadMore">
+                                    <a href="/ourServices.php" class="buildingLicenses__linkReadMore">
                                         READ MORE
                                     </a>
                                 </div>
@@ -161,7 +136,7 @@
                     </div>
                 </div>
                 <div class="buildingLicenses__button">
-                    <a href="#" class="buildingLicenses__link">
+                    <a href="/ourServices.php" class="buildingLicenses__link">
                         see more and detailed services
                     </a>
                 </div>

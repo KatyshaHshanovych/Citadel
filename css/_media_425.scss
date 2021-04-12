@@ -54,19 +54,21 @@
     }
 
     &__quantity {
-      padding: 10px 15px;
+      padding: 0 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: column;
     }
 
     &__texts {
       font-size: 20px;
+      padding-bottom: 10px;
     }
 
     &__thirty {
       font-size: 20px;
-      font-family: workSansMedium;
+      padding-bottom: 10px;
     }
 
     &__images {
@@ -81,6 +83,17 @@
       width: 228px;
       overflow: hidden;
       margin: 0 auto;
+    }
+  }
+
+  .aboutUs-block {
+
+    &__explanationOne {
+      width: 100%;
+    }
+
+    &__explanationSecond {
+      width: 100%;
     }
   }
 }

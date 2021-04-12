@@ -9,6 +9,7 @@
     width: 100%;
     position: sticky;
     top: 0;
+    padding-top: 0;
 
     &__small {
       display: none;
@@ -22,7 +23,7 @@
       justify-content: space-between;
       align-items: center;
       height: 80px;
-      background: white;
+      //background: white;
       padding: 0 20px;
     }
 
@@ -53,10 +54,6 @@
         border-bottom: 0;
         margin-bottom: 20px;
         text-align: center;
-
-        a {
-          font-size: 20px;
-        }
       }
     }
 
@@ -81,20 +78,25 @@
 
       }
     }
+
+    &__links {
+      font-size: 20px;
+    }
   }
 
   .page-home {
     .header {
       &__small {
-        background: #00adb5;
+        background: #64B8EB;
       }
       &__hamburger {
-        background: #00adb5;
+        background: transparent;
       }
     }
   }
 
   .buildingLicenses {
+
 
     &__title {
       font-size: 50px;
@@ -105,7 +107,7 @@
     }
 
     &__left {
-      width: 500px;
+      width: 90%;
     }
 
     &__grids {
@@ -118,10 +120,12 @@
 
     &__explanationOne {
       font-size: 14px;
+      width: 90%;
     }
 
     &__explanationSecond {
       font-size: 14px;
+      width: 90%;
     }
 
     &__infoText {
@@ -132,6 +136,8 @@
       padding-top: 40px;
       font-size: 40px;
     }
+
+
   }
 
   .ourServices-block {
@@ -190,11 +196,29 @@
     }
   }
 
-  .slick-next {
-    display: none !important;
+
+  .menu  {
+    ul {
+      li {
+        margin-right: 0;
+        a {
+          font-size: 20px;
+        }
+      }
+    }
   }
 
-  .slick-prev {
-    display: none !important;
+  .page-home {
+    .menu {
+      ul {
+        li {
+          &.active {
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
   }
 }

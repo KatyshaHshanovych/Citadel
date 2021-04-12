@@ -27,3 +27,46 @@
     src: url(/fonts/WorkSans-Medium.ttf) format('truetype');
     font-style: normal;
 }
+
+@font-face {
+    font-family: PoppinsBlack;
+    src: url(/fonts/poppins/Poppins-Black.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(/fonts/poppins/Poppins-Medium.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SansBlack;
+    src: url(/fonts/sansPro/WorkSans-Black.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SansBold;
+    src: url(/fonts/sansPro/WorkSans-Bold.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SansMedium;
+    src: url(/fonts/sansPro/WorkSans-Medium.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SansRegular;
+    src: url(/fonts/sansPro/WorkSans-Regular.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SansSemiBold;
+    src: url(/fonts/sansPro/WorkSans-SemiBold.ttf) format('truetype');
+    font-style: normal;
+}
+

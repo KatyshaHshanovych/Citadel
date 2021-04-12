@@ -16,8 +16,8 @@
             <div class="contacts__bigTitle">
                 <span class="contacts__green">Contacts</span>
             </div>
-            <div class="contacts__backMap">
-                <img src="./img/map.png" class="contacts__location" alt="map" title="map">
+            <div class="contacts__map">
+                <div id="map" style="width: 100%; height: 520px"></div>
             </div>
             <?php include 'form.php'; ?>
         </div>

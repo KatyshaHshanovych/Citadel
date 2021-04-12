@@ -20,8 +20,27 @@
             </div>
             <div class="block-center">
                 <div class="ourServices-block__grid">
-                    <div class="ourServices-block__imgBlock">
-                        <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
+                    <div class="ourServices-block__informGrid">
+                        <div class="ourServices-block__titleGrid">
+                            Legislation Of Illegal Construction
+                        </div>
+                        <div class="ourServices-block__news">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Amet nibh sed sed diam. Sit lacus id metus, pretium, posuere.
+                            Id cum non urna, at pellentesque morbi. In diam odio turpis ultrices est dictum.
+                            Turpis eget donec et facilisi dui pellentesque.
+                        </div>
+                        <div class="ourServices-block__readMore">
+                            <a href="#" class="ourServices-block__linkReadMore">
+                                READ MORE
+                            </a>
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
+                            </a>
+                        </div>
+                        <div class="ourServices-block__imgBlock">
+                            <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
+                        </div>
                     </div>
                     <div class="ourServices-block__informGrid">
                         <div class="ourServices-block__titleGrid">
@@ -36,6 +55,53 @@
                         <div class="ourServices-block__readMore">
                             <a href="#" class="ourServices-block__linkReadMore">
                                 READ MORE
+                            </a>
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
+                            </a>
+                        </div>
+                        <div class="ourServices-block__imgBlock">
+                            <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
+                        </div>
+                    </div>
+                    <div class="ourServices-block__informGrid">
+                        <div class="ourServices-block__titleGrid">
+                            Legislation Of Illegal Construction
+                        </div>
+                        <div class="ourServices-block__news">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Amet nibh sed sed diam. Sit lacus id metus, pretium, posuere.
+                            Id cum non urna, at pellentesque morbi. In diam odio turpis ultrices est dictum.
+                            Turpis eget donec et facilisi dui pellentesque.
+                        </div>
+                        <div class="ourServices-block__readMore">
+                            <a href="#" class="ourServices-block__linkReadMore">
+                                READ MORE
+                            </a>
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
+                            </a>
+                        </div>
+                        <div class="ourServices-block__imgBlock">
+                            <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
+                        </div>
+                    </div>
+                    <div class="ourServices-block__informGrid">
+                        <div class="ourServices-block__titleGrid">
+                            Legislation Of Illegal Construction
+                        </div>
+                        <div class="ourServices-block__news">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Amet nibh sed sed diam. Sit lacus id metus, pretium, posuere.
+                            Id cum non urna, at pellentesque morbi. In diam odio turpis ultrices est dictum.
+                            Turpis eget donec et facilisi dui pellentesque.
+                        </div>
+                        <div class="ourServices-block__readMore">
+                            <a href="#" class="ourServices-block__linkReadMore">
+                                READ MORE
+                            </a>
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
                             </a>
                         </div>
                     </div>
@@ -53,6 +119,12 @@
                             <a href="#" class="ourServices-block__linkReadMore">
                                 READ MORE
                             </a>
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
+                            </a>
+                        </div>
+                        <div class="ourServices-block__imgBlock">
+                            <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
                         </div>
                     </div>
                     <div class="ourServices-block__informGrid">
@@ -69,6 +141,12 @@
                             <a href="#" class="ourServices-block__linkReadMore">
                                 READ MORE
                             </a>
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
+                            </a>
+                        </div>
+                        <div class="ourServices-block__imgBlock">
+                            <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
                         </div>
                     </div>
                     <div class="ourServices-block__informGrid">
@@ -85,6 +163,12 @@
                             <a href="#" class="ourServices-block__linkReadMore">
                                 READ MORE
                             </a>
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
+                            </a>
+                        </div>
+                        <div class="ourServices-block__imgBlock">
+                            <img src="./img/img_services.png" alt="img" title="img" class="ourServices-block__imageItem">
                         </div>
                     </div>
                     <div class="ourServices-block__informGrid">
@@ -101,53 +185,8 @@
                             <a href="#" class="ourServices-block__linkReadMore">
                                 READ MORE
                             </a>
-                        </div>
-                    </div>
-                    <div class="ourServices-block__informGrid">
-                        <div class="ourServices-block__titleGrid">
-                            Legislation Of Illegal Construction
-                        </div>
-                        <div class="ourServices-block__news">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Amet nibh sed sed diam. Sit lacus id metus, pretium, posuere.
-                            Id cum non urna, at pellentesque morbi. In diam odio turpis ultrices est dictum.
-                            Turpis eget donec et facilisi dui pellentesque.
-                        </div>
-                        <div class="ourServices-block__readMore">
-                            <a href="#" class="ourServices-block__linkReadMore">
-                                READ MORE
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ourServices-block__informGrid">
-                        <div class="ourServices-block__titleGrid">
-                            Legislation Of Illegal Construction
-                        </div>
-                        <div class="ourServices-block__news">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Amet nibh sed sed diam. Sit lacus id metus, pretium, posuere.
-                            Id cum non urna, at pellentesque morbi. In diam odio turpis ultrices est dictum.
-                            Turpis eget donec et facilisi dui pellentesque.
-                        </div>
-                        <div class="ourServices-block__readMore">
-                            <a href="#" class="ourServices-block__linkReadMore">
-                                READ MORE
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ourServices-block__informGrid">
-                        <div class="ourServices-block__titleGrid">
-                            Legislation Of Illegal Construction
-                        </div>
-                        <div class="ourServices-block__news">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Amet nibh sed sed diam. Sit lacus id metus, pretium, posuere.
-                            Id cum non urna, at pellentesque morbi. In diam odio turpis ultrices est dictum.
-                            Turpis eget donec et facilisi dui pellentesque.
-                        </div>
-                        <div class="ourServices-block__readMore">
-                            <a href="#" class="ourServices-block__linkReadMore">
-                                READ MORE
+                            <a href="/contacts.php" class="ourServices-block__linkContactUs">
+                                Contact us
                             </a>
                         </div>
                     </div>

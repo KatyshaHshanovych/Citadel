@@ -98,6 +98,14 @@
     &__generalInfo {
       display: none !important;
     }
+
+    &__mobile {
+      display: block !important;
+    }
+
+    &__slider {
+      display: none;
+    }
   }
 
   .ourServices-block {

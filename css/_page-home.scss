@@ -5,14 +5,19 @@
 
     &__links {
       color: #F8FCFC;
+      font-size: 20px;
     }
 
     &__logoLink {
-      background-image: url(../img/logo.png);
+      background-image: url(../img/logo_icon.png);
     }
 
     &__iconItem {
       color: white;
+    }
+
+    &__navLink {
+      border-bottom: 0;
     }
   }
 
